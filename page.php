@@ -31,5 +31,5 @@
 		<!-- start sidebar -->
 		<?php get_sidebar('content'); ?>
 
-	</div><!-- #content -->>
+	</div><!-- #content -->
 <?php get_footer(); ?>

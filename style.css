@@ -30,17 +30,26 @@ body{
     color: #000000;
 }
 
+a{
+    text-decoration: none;
+}
+
+a img{
+    border: none;
+}
+
 #content{
     margin: 20px 0;
     max-width: 960px;
-    overflow: hidden;
 }
 
+/* Main Content */
 #main{
     max-width: 620px;
     float: left;
 }
 
+/* Sidebar */
 #sidebar{
     max-width: 300px;
     float: right;
@@ -52,16 +61,18 @@ body{
 
 /* Header */
 header{
-    width: 960px;
-    /*height: auto;*/
     margin: 0 auto;
-    background-color: #000000;
+    max-width: 960px;
+    height: 300px;
 }
 
-header #main_menu{
-
+/* Main Navigation */
+.menu{
+    margin: 0 auto;
+    max-width: 960px;
+    height: 200px;
 }
-.clear .menu ul li{
+.menu ul li{
     display: inline-block;
     list-style-type: none;
 }
