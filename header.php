@@ -9,7 +9,7 @@
 	</head>
 	<body <?php body_class($class) ?>
 		<header>
-			<a href="<?php bloginfo('url'); ?>"><img src="http://placehold.it/350x150">
+			<a href="<?php bloginfo('url'); ?>"><img src="http://placehold.it/350x150"></a>
 			<div class="right_column_header">
 			<div class="right_column_top_header">	
 				<ul>

@@ -1,8 +1,8 @@
 /*
- * Theme Name: necnlocal
- * Theme URI: http://lking011.com/NECNLocal
- * Description: A local working instance of the NECN website
- * Author: Lydia King
+ * Theme Name: NECN
+ * Theme URI: http://readyseattle.org
+ * Description: Neighborhood Emergency Communications Network theme for new website
+ * Author: ITC210-NECN
  * Author URI: http://lking011.com
  * Version: 1.0
  * 
@@ -15,7 +15,56 @@
  * General Comments (optional)
  */
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 960px;
+    font-family:'Open Sans', arial, helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    color: #000000;
+}
+
+#content{
+    margin: 20px 0;
+    max-width: 960px;
+    overflow: hidden;
+}
+
+#main{
+    max-width: 620px;
+    float: left;
+}
+
+#sidebar{
+    max-width: 300px;
+    float: right;
+}
+
+#sidebar li{
+    list-style-type: none;
+}
+
 /* Header */
+header{
+    width: 960px;
+    /*height: auto;*/
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+header #main_menu{
+
+}
+.clear .menu ul li{
+    display: inline-block;
+    list-style-type: none;
+}
 
 .right_column_header {
 	float: right;
@@ -78,4 +127,5 @@
 
 footer {
 	text-align: center;
+    clear: both;
 }
