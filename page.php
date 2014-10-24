@@ -8,7 +8,7 @@
 				<?php bcn_display(); ?>
 			</div>
 			<?php
-			echo do_shortcode("[metaslider id=337]");
+			echo do_shortcode("[metaslider id=241]");
 			?>
 			<!-- start loop -->
 			<?php if (have_posts()) : ?>
