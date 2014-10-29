@@ -49,6 +49,16 @@ a img{
     float: left;
 }
 
+/*
+ul{
+	margin-left: 2.25em;
+}
+
+ol{
+	margin-left: 2.75em;
+}
+*/
+
 /* Sidebar */
 #sidebar{
     max-width: 300px;
@@ -92,7 +102,6 @@ header{
 	display: inline;
 	padding-right: 1em;
 	text-align: left;
-	
 }
 
 .right_column_bottom_header img {
@@ -126,7 +135,6 @@ header{
 	position: relative;
 	font-size: .75em;
 	display: block;
-	
 }
 
 

@@ -13,3 +13,4 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 node_modules
 .DS_Store
+*.komodoproject
