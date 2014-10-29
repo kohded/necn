@@ -14,49 +14,48 @@ function my_register_sidebars() {
 	register_sidebar( array(
 		'id'            => 'primary',
 		'name'          => __( 'Primary Sidebar' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'id'            => 'content',
 		'name'          => __( 'Content Sidebar' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'id'            => 'footer',
 		'name'          => __( 'Footer Bar' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 
 		register_sidebar ( array(
 		'id'			=>'ballard',
 		'name'		=>__( 'Content Ballard' ),
-		'before_widget'=> '<aside id="%1$s" class="widget %2$s"> ',
-		'after_widget' => '</aside>',
+		'before_widget'=> '<div id="%1$s" class="widget %2$s"> ',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		));
 		register_sidebar ( array(
 		'id'			=>'broadview',
 		'name'		=>__( 'Content Broadview' ),
-		'before_widget'=> '<aside id="%1$s" class="widget %2$s"> ',
-		'after_widget' => '</aside>',
+		'before_widget'=> '<div id="%1$s" class="widget %2$s"> ',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		));
 		register_sidebar ( array(
 		'id'			=>'capital_hill',
 		'name'		=>__( 'Content Capital_hill' ),
-		'before_widget'=> '<aside id="%1$s" class="widget %2$s"> ',
-		'after_widget' => '</aside>',
+		'before_widget'=> '<div id="%1$s" class="widget %2$s"> ',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>'
 		));
