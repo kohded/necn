@@ -24,9 +24,9 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/images/youtube.png">
 			</div><!--closing div for right_column_bottom_header-->
 			</div><!--closing div for right_column_header-->
-<div class="clear"></div>
+<!--			<div class="clear"></div>-->
 			<?php wp_nav_menu($mainMenu);?>
-<div class="clear"></div>
+<!--			<div class="clear"></div>-->
 	    </header>
 		
 	<div>
