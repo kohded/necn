@@ -28,15 +28,16 @@
 			endwhile; endif;
 			
 		?>
-				<?php wp_link_pages(); ?>
+
              
   		</div>
  		<!-- end posts -->
         
 		 		<!-- start right page sidebar -->
-        <div id="right-widgets">
+    
+				
 			<?php get_sidebar('home-right'); ?>
-		</div>
+		
 		 		<!-- end right page sidebar -->
                 
 	</div>
