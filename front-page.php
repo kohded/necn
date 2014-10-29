@@ -36,7 +36,7 @@
 		 		<!-- start right page sidebar -->
     
 				
-			<?php get_sidebar('home-right'); ?>
+			<?php get_sidebar('primary'); ?>
 		
 		 		<!-- end right page sidebar -->
                 
