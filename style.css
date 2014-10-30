@@ -112,7 +112,7 @@ header{
 
 /* Navigation */
 
-.menu-primary-menu-container li{
+.menu-main-nav-container li{
 	font-size: 1.50em;
 	display: inline-block;
 	text-align: center;
@@ -121,24 +121,24 @@ header{
 	margin-right: auto;
 }
 
-.menu-primary-menu-container a {
+.menu-main-nav-container a {
 	text-decoration: none;
 	color: black;
 }
 
-.menu-primary-menu-container ul ul {
+.menu-main-nav-container ul ul {
 	position: absolute;
 	display: none;
 }
 
-.menu-primary-menu-container ul ul li{
+.menu-main-nav-container ul ul li{
 	position: relative;
 	font-size: .75em;
 	display: block;
 }
 
 
-.menu-primary-menu-container ul li:hover > ul {
+.menu-main-nav-container ul li:hover > ul {
 		display: block;
 	}
 
