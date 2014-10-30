@@ -38,28 +38,26 @@ a img{
     border: none;
 }
 
-#content{
+/* Header */
+header{
+    margin: 0 auto;
+    max-width: 960px;
+    height: 300px;
+}
+
+.content{
     margin: 20px 0;
     max-width: 960px;
 }
 
 /* Main Content */
-#main{
+.main-content{
     max-width: 620px;
     float: left;
 }
 
-/*
-ul{
-	margin-left: 2.25em;
-}
-
-ol{
-	margin-left: 2.75em;
-}
-*/
-
 /* Sidebar */
+/*change #sidebar to class name when sidebar.php is committed*/
 #sidebar{
     max-width: 300px;
     float: right;
@@ -69,23 +67,7 @@ ol{
     list-style-type: none;
 }
 
-/* Header */
-header{
-    margin: 0 auto;
-    max-width: 960px;
-    height: 300px;
-}
-
 /* Main Navigation */
-/* .menu{
-    margin: 0 auto;
-    max-width: 960px;
-    height: 200px;
-}
-.menu ul li{
-    display: inline-block;
-    list-style-type: none;
-}*/
 
 .right_column_header {
 	float: right;
