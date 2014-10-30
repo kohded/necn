@@ -62,16 +62,16 @@ function my_register_sidebars() {
 		register_sidebar ( array(
 		'id'			=>'central_district',
 		'name'		=>__( 'Content Central_district' ),
-		'before_widget'=> '<aside id="%1$s" class="widget %2$s"> ',
-		'after_widget' => '</aside>',
+		'before_widget'=> '<div id="%1$s" class="widget %2$s"> ',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		));
 		register_sidebar ( array(
 		'id'			=>'crown_hill',
 		'name'		=>__( 'Content Crown_hill' ),
-		'before_widget'=> '<aside id="%1$s" class="widget %2$s"> ',
-		'after_widget' => '</aside>',
+		'before_widget'=> '<div id="%1$s" class="widget %2$s"> ',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		));
@@ -142,48 +142,48 @@ function my_register_sidebars() {
 				register_sidebar ( array(
 		'id'			=>'rainier_beach',
 		'name'		=>__( 'Content Rainier_beach' ),
-		'before_widget'=> '<aside id="%1$s" class="widget %2$s"> ',
-		'after_widget' => '</aside>',
+		'before_widget'=> '<div id="%1$s" class="widget %2$s"> ',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		));
 				register_sidebar ( array(
 		'id'			=>'seattle',
 		'name'		=>__( 'Content Seattle' ),
-		'before_widget'=> '<aside id="%1$s" class="widget %2$s"> ',
-		'after_widget' => '</aside>',
+		'before_widget'=> '<div id="%1$s" class="widget %2$s"> ',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		));
 				register_sidebar ( array(
 		'id'			=>'shilshole_bay',
 		'name'		=>__( 'Content Shilshole_bay' ),
-		'before_widget'=> '<aside id="%1$s" class="widget %2$s"> ',
-		'after_widget' => '</aside>',
+		'before_widget'=> '<div id="%1$s" class="widget %2$s"> ',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		));
 				register_sidebar ( array(
 		'id'			=>'wallingford',
 		'name'		=>__( 'Content Wallingford' ),
-		'before_widget'=> '<aside id="%1$s" class="widget %2$s"> ',
-		'after_widget' => '</aside>',
+		'before_widget'=> '<div id="%1$s" class="widget %2$s"> ',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		));
 				register_sidebar ( array(
 		'id'			=>'wedgewood',
 		'name'		=>__( 'Content Wedgewood' ),
-		'before_widget'=> '<aside id="%1$s" class="widget %2$s"> ',
-		'after_widget' => '</aside>',
+		'before_widget'=> '<div id="%1$s" class="widget %2$s"> ',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		));
 				register_sidebar ( array(
 		'id'			=>'west_seattle',
 		'name'		=>__( 'Content West_seattle' ),
-		'before_widget'=> '<aside id="%1$s" class="widget %2$s"> ',
-		'after_widget' => '</aside>',
+		'before_widget'=> '<div id="%1$s" class="widget %2$s"> ',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		));
