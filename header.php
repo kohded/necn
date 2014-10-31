@@ -9,11 +9,11 @@
 	</head>
 	<body <?php body_class($class) ?>>
 		<header>
-			<a href="<?php bloginfo('url'); ?>"><img src="http://placehold.it/350x150">
+                        <a href="<?php bloginfo('url'); ?>"><img src="http://placehold.it/350x150"></a>
 			<div class="right-column-header">
 			<div class="right-column-top-header">	
 				<ul>
-					<li><a href="<?php bloginfo('home'); ?>/wp-admin/">Login</a></li>
+					<li><a href="<?php bloginfo('home'); ?>/wp-login.php">Login</a></li>
 					<li><?php get_search_form(); ?></li>
 				</ul>
 			</div>
@@ -24,7 +24,7 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/images/youtube.png">
 			</div><!--closing div for right_column_bottom_header-->	
 			</div><!--closing div for right_column_header-->
-			<div class="clear"</div>
+			<div class="clear"></div>
 			<?php wp_nav_menu($mainMenu);?>
 			<div class="clear"></div>
 	    </header>

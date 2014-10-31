@@ -30,7 +30,7 @@ $parentname = get_the_title($post->ID);
 				<?php echo $children; ?>
 			</ul>
 		</div>
-<?php }
+        <?php }}}
 
 ?>
 <!-- End Sub Pages -->
