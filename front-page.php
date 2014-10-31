@@ -13,7 +13,7 @@
 ?>    </div>
     		<!-- end front-page slider -->        
 <!-- start content -->
-	<div id="content-front-page" class="content-area">		
+	<div class="content-area">		
   	<h3>
   		Neighboorhood Emergency Communications Network SEO keyword rich summary goes
 
