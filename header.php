@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>
+<html <?php language_attributes(); ?>>
 	<head>
 		<title><?php bloginfo("name") . wp_title('|'); ?></title>
 		<meta charset="<?php bloginfo('charset'); ?>">
@@ -7,13 +7,13 @@
 		<meta name="viewport" content="width=device-width">
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class($class) ?>
+	<body <?php body_class($class) ?>>
 		<header>
 			<a href="<?php bloginfo('url'); ?>"><img src="http://placehold.it/350x150">
 			<div class="right-column-header">
 			<div class="right-column-top-header">	
 				<ul>
-					<li><a href="">Login</a></li>
+					<li><a href="<?php bloginfo('home'); ?>/wp-admin/">Login</a></li>
 					<li><?php get_search_form(); ?></li>
 				</ul>
 			</div>
@@ -29,4 +29,5 @@
 			<div class="clear"></div>
 	    </header>
 		
-	<div>
+	<!-- start content -->
+        <div class="content">

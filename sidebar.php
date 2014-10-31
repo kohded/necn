@@ -8,7 +8,7 @@
  */
 ?>
 <!--begin sidebar -->
-<aside class="sidebar">
+<aside class="main-content-right">
 	
 <?php // if is not either the 'not found' or 'search' pages
 	if ( !is_404() ) { if ( !is_search() ) {

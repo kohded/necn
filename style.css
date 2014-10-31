@@ -15,89 +15,61 @@
  * General Comments (optional)
  */
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+        margin: 0;
+        padding: 0;
 }
 
-body{
-    margin: 0 auto;
-    padding: 10px;
-    max-width: 960px;
-    font-family:'Open Sans', arial, helvetica, sans-serif;
-    font-size: 100%;
-    line-height: 1.5;
-    color: #000000;
+body {
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 960px;
+        font-family:'Open Sans', arial, helvetica, sans-serif;
+        font-size: 100%;
+        line-height: 1.5;
+        color: #000000;
 }
 
-a{
-    text-decoration: none;
+a {
+        text-decoration: none;
 }
 
-a img{
-    border: none;
+a img {
+        border: none;
 }
 
-<<<<<<< Updated upstream
-/* Header */
-header{
-    margin: 0 auto;
-    max-width: 960px;
-    height: 300px;
-}
-=======
->>>>>>> Stashed changes
-
-.content{
-    margin: 20px 0;
-    max-width: 960px;
+.content {
+        margin: 20px 0;
+        max-width: 960px;
 }
 
 /* Main Content */
-<<<<<<< Updated upstream
-.main-content{
-=======
-.content-area{
->>>>>>> Stashed changes
-    max-width: 620px;
-    float: left;
-}
-
-<<<<<<< Updated upstream
-/* Sidebar */
-/*change #sidebar to class name when sidebar.php is committed*/
-#sidebar{
-    max-width: 300px;
-    float: right;
-=======
-/* Slider */
-#slider-home {
-	width: 960px;
+.main-content-left, .content-area {
+        max-width: 620px;
+        float: left;
 }
 
 /* Sidebar */
 .main-content-right {
-	float:right;
-	width: 30%;
->>>>>>> Stashed changes
+        max-width: 300px;
+        float: right;
 }
 
 .main-content-right li {
 	list-style: none;
 }
 
-<<<<<<< Updated upstream
-=======
-
-
-/* Header */
-header{
-    margin: 0 auto;
-    width: 960px;
-    height: 300px;
+/* Slider */
+#slider-home {
+	width: 960px;
 }
 
->>>>>>> Stashed changes
+/* Header */
+header {
+        max-width: 960px;
+        height: 300px;
+}
+
 /* Main Navigation */
 
 .right-column-header {
@@ -125,7 +97,7 @@ header{
 
 /* Navigation */
 
-.menu-primary-menu-container li{
+.menu-primary-menu-container li {
 	font-size: 1em;
 	display: inline-block;
 	text-align: center;
@@ -144,7 +116,7 @@ header{
 	display: none;
 }
 
-.menu-primary-menu-container ul ul li{
+.menu-primary-menu-container ul ul li {
 	position: relative;
 	font-size: .75em;
 	display: block;
@@ -152,12 +124,13 @@ header{
 
 
 .menu-primary-menu-container ul li:hover > ul {
-		display: block;
-	}
+        display: block;
+}
 
 /* Footer */
 
 footer {
+        max-width: 960px;
 	text-align: center;
-    clear: both;
+        clear: both;
 }
