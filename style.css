@@ -1,6 +1,6 @@
 /*
- * Theme Name: NECN
- * Theme URI: http://readyseattle.org
+ * Theme Name: NECNLocal
+ * Theme URI:  http://lking011.com
  * Description: Neighborhood Emergency Communications Network theme for new website
  * Author: ITC210-NECN
  * Author URI: http://lking011.com
@@ -38,12 +38,15 @@ a img{
     border: none;
 }
 
+<<<<<<< Updated upstream
 /* Header */
 header{
     margin: 0 auto;
     max-width: 960px;
     height: 300px;
 }
+=======
+>>>>>>> Stashed changes
 
 .content{
     margin: 20px 0;
@@ -51,42 +54,70 @@ header{
 }
 
 /* Main Content */
+<<<<<<< Updated upstream
 .main-content{
+=======
+.content-area{
+>>>>>>> Stashed changes
     max-width: 620px;
     float: left;
 }
 
+<<<<<<< Updated upstream
 /* Sidebar */
 /*change #sidebar to class name when sidebar.php is committed*/
 #sidebar{
     max-width: 300px;
     float: right;
+=======
+/* Slider */
+#slider-home {
+	width: 960px;
 }
 
-#sidebar li{
-    list-style-type: none;
+/* Sidebar */
+.main-content-right {
+	float:right;
+	width: 30%;
+>>>>>>> Stashed changes
 }
 
+.main-content-right li {
+	list-style: none;
+}
+
+<<<<<<< Updated upstream
+=======
+
+
+/* Header */
+header{
+    margin: 0 auto;
+    width: 960px;
+    height: 300px;
+}
+
+>>>>>>> Stashed changes
 /* Main Navigation */
 
-.right_column_header {
+.right-column-header {
 	float: right;
 }
 
-.right_column_top_header ul {
-	padding-right: 1.5em;
+.right-column-top-header ul {
+	padding-right: .75em;
 	margin-bottom: .5em;
 }
 
-.right_column_top_header li {
+.right-column-top-header li {
 	color: black;
-	font-size: 1.5em;
+	font-size: 1em;
 	display: inline;
 	padding-right: 1em;
 	text-align: left;
 }
 
-.right_column_bottom_header img {
+.right-column-bottom-header img {
 	height: 30px;
 	width:30px;
 	padding-left: 1em;
@@ -94,8 +125,8 @@ header{
 
 /* Navigation */
 
-.menu-main-nav-container li{
-	font-size: 1.50em;
+.menu-primary-menu-container li{
+	font-size: 1em;
 	display: inline-block;
 	text-align: center;
 	padding: .5em;
@@ -103,24 +134,24 @@ header{
 	margin-right: auto;
 }
 
-.menu-main-nav-container a {
+.menu-primary-menu-container a {
 	text-decoration: none;
 	color: black;
 }
 
-.menu-main-nav-container ul ul {
+.menu-primary-menu-container ul ul {
 	position: absolute;
 	display: none;
 }
 
-.menu-main-nav-container ul ul li{
+.menu-primary-menu-container ul ul li{
 	position: relative;
 	font-size: .75em;
 	display: block;
 }
 
 
-.menu-main-nav-container ul li:hover > ul {
+.menu-primary-menu-container ul li:hover > ul {
 		display: block;
 	}
 

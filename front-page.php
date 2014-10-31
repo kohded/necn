@@ -5,19 +5,37 @@
 ?>
 <?php get_header(); ?>
 
-		<!-- start content -->
-	<div id="content-front-page" class="content-area">
+		
     		<!-- start front-page slider -->
     <div id="slider-home">
-    </div>
+<?php 
+    echo do_shortcode("[metaslider id=262]"); 
+?>    </div>
     		<!-- end front-page slider -->        
-		
+<!-- start content -->
+	<div id="content-front-page" class="content-area">		
+  	<h3>
+  		Neighboorhood Emergency Communications Network SEO keyword rich summary goes
+
+here. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+
+turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+
+Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+  	</h3>
+  
         <!-- start posts -->            
             	
-		<?php 
-		// Start the Loop
-		if (have_posts()) : while (have_posts()) : the_post();
+	<?php if ( have_posts() ) : ?>
+	<?php while ( have_posts() ) : the_post(); ?> 	   
+		<article class="page-article-post">
+			 
+             <?php the_content(); ?>
+   		 </article>
+	<?php endwhile; ?>
+<?php endif; ?>
 		
+<<<<<<< Updated upstream
 						// Include the page content template.
 			get_template_part( 'content', 'page' );
 
@@ -29,19 +47,31 @@
 			
 		?>
 
+=======
+	
+				<?php wp_link_pages(); ?>
+>>>>>>> Stashed changes
              
   		</div>
  		<!-- end posts -->
         
+<<<<<<< Updated upstream
 		 		<!-- start right page sidebar -->
     
 				
 			<?php get_sidebar('primary'); ?>
 		
 		 		<!-- end right page sidebar -->
+=======
+		<div class="main-content-right">
+			<?php get_sidebar("primary"); ?>	
+		</div> 	
+>>>>>>> Stashed changes
                 
-	</div>
 		<!-- end content -->
+		<div class="footer-sidebar">
+			<?php get_sidebar("footer"); ?>
+		</div>
+		
         
 <?php get_footer(); ?>
-
