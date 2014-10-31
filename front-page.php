@@ -42,7 +42,7 @@ Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
     </div>
 
     <!-- start right page sidebar -->
-    <?php get_sidebar('primary'); ?>
+    <?php get_sidebar(); ?>
     <!-- end right page sidebar -->
 
 <?php get_footer(); ?>

@@ -41,6 +41,6 @@
     </nav>
 </main>
 
-<?php get_sidebar('content'); ?>
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
