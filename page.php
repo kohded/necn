@@ -25,7 +25,13 @@
             </article>
         <?php endwhile; ?>
     <?php endif; // ?>
-    <!-- end loop -->      
+    <!-- end loop -->
+ 
+    <div class="main-content-social-media">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/youtube.png">
+    </div><!--closing div for right_column_bottom_header-->	
 </main>
 
 <?php get_sidebar(); ?>

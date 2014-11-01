@@ -14,10 +14,10 @@
     		<!-- end front-page slider -->        
 <!-- start content -->
 	<div class="content-area">		
-  	<h3>
+  	<p>
   		Neighboorhood Emergency Communications Network 
-        </h3>       
-                <p>SEO keyword rich summary goes
+             
+                SEO keyword rich summary goes
 
 here. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
 

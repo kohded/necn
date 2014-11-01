@@ -187,6 +187,21 @@ function my_register_sidebars() {
 //		'before_title' => '<h3 class="widget-title">',
 //		'after_title' => '</h3>',
 //		));
-
 	}
+    
+//    Numbered pagination for posts
+    if ( ! function_exists( 'numbered_pagination' ) ) :
+    function numbered_pagination() 
+    {
+        global $wp_query;
+        $max = 999999; // max number
+
+        echo paginate_links( array(
+            'base'      => str_replace( $max, '%#%', esc_url( get_pagenum_link( $max ) ) ),
+            'format'    => '?paged=%#%',
+            'current'   => max( 1, get_query_var('paged') ),
+            'total'     => $wp_query->max_num_pages
+        ) );
+    }
+    endif;
 ?>
