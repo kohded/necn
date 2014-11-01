@@ -9,7 +9,7 @@
     		<!-- start front-page slider -->
     <div id="slider-home">
 <?php 
-    echo do_shortcode("[metaslider id=262]"); 
+    echo do_shortcode("[metaslider id=334]"); 
 ?>    </div>
     		<!-- end front-page slider -->        
 <!-- start content -->
