@@ -70,8 +70,16 @@ a img {
 	list-style-type: none;
 }
 
+/*Social Media Button*/
 .main-content-social-media {
         float: right;
+}
+
+.main-content-social-media h3 {
+        text-align: center;
+}
+.main-content-social-media img {
+        padding: 0 5px;
 }
 
 /* Slider */
@@ -104,8 +112,7 @@ header {
 	text-align: left;
 }
 
-.right-column-bottom-header img,
-.main-content-social-media img {
+.right-column-bottom-header img {
 	height: 30px;
 	width:30px;
 	padding-left: 1em;
@@ -127,7 +134,7 @@ header {
 }
 
 .menu-main-nav-container ul li{
-    display: inline-block;
+        display: inline-block;
 }
 /*TEMP NAV STYLE*/
 

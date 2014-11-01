@@ -28,10 +28,9 @@
     <!-- end loop -->
  
     <div class="main-content-social-media">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/youtube.png">
-    </div><!--closing div for right_column_bottom_header-->	
+        <h3>Stay Connected</h3>
+        <?php if ( function_exists('cn_social_icon') ) echo cn_social_icon(); ?>
+    </div><!--closing div for main-content-social-media-->	
 </main>
 
 <?php get_sidebar(); ?>
