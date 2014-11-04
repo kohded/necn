@@ -1,0 +1,178 @@
+/*
+ * Theme Name: NECNLocal
+ * Theme URI:  http://lking011.com
+ * Description: Neighborhood Emergency Communications Network theme for new website
+ * Author: ITC210-NECN
+ * Author URI: http://lking011.com
+ * Version: 1.0
+ * 
+ * Tags:
+ * 
+ * License:
+ * 
+ * License URI:
+ * 
+ * General Comments (optional)
+ */
+
+* {
+        margin: 0;
+        padding: 0;
+}
+
+body {
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 960px;
+        font-family:'Open Sans', arial, helvetica, sans-serif;
+        font-size: 100%;
+        line-height: 1.5;
+        color: #000000;
+}
+
+a {
+        text-decoration: none;
+}
+
+a img {
+        border: none;
+}
+
+.content {
+        margin: 20px 0;
+        max-width: 960px;
+}
+
+/* Main Content */
+.main-content-left, .content-area {
+        max-width: 620px;
+        float: left;
+}
+
+/*Post Metadata*/
+.post-metadata li {
+        display: inline;
+}
+
+/*Pagination*/
+.post-nav {
+        margin: 10px auto;
+        text-align: center;
+}
+
+/* Sidebar */
+.main-content-right {
+        max-width: 300px;
+        float: right;
+}
+
+.main-content-right li {
+	list-style-type: none;
+}
+
+/*Social Media Button*/
+.main-content-social-media {
+        margin: 20px 0;
+        float: right;
+}
+
+.main-content-social-media h3 {
+        text-align: center;
+}
+.main-content-social-media img {
+        padding: 0 5px;
+}
+
+/* Slider */
+#slider-home {
+	width: 960px;
+}
+
+/* Header */
+header {
+        max-width: 960px;
+        height: 300px;
+}
+
+/* Main Navigation */
+
+.right-column-header {
+	float: right;
+}
+
+.right-column-top-header ul {
+	padding-right: .75em;
+	margin-bottom: .5em;
+}
+
+.right-column-top-header li {
+	color: black;
+	font-size: 1em;
+	display: inline;
+	padding-right: 1em;
+	text-align: left;
+}
+
+.right-column-bottom-header img {
+	height: 30px;
+	width:30px;
+	padding-left: 1em;
+}
+
+/* Navigation */
+/*TEMP NAV STYLE*/
+.menu-main-nav-container {
+        max-width: 960px;
+        /*overflow: hidden;*/
+}
+
+.menu-main-nav-container ul {
+    
+        display: inline-block;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+}
+
+.menu-main-nav-container ul li{
+        display: inline-block;
+}
+/*TEMP NAV STYLE*/
+
+/*.menu-primary-menu-container li {
+	font-size: 1em;
+	display: inline-block;
+	text-align: center;
+	padding: .5em;
+	margin-left:4%;
+	margin-right: auto;
+}
+
+.menu-primary-menu-container a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu-primary-menu-container ul ul {
+	position: absolute;
+	display: none;
+}
+
+.menu-primary-menu-container ul ul li {
+	position: relative;
+	font-size: .75em;
+	display: block;
+}
+
+
+.menu-primary-menu-container ul li:hover > ul {
+        display: block;
+}*/
+
+/* Footer */
+
+footer {
+        max-width: 960px;
+	text-align: center;
+        clear: both;
+}

@@ -60,4 +60,8 @@ $parentname = get_the_title($post->ID);
 		endif;
 	?>
 </aside>
+<<<<<<< HEAD
 <!-- end sidebar-->
+=======
+<!-- end sidebar-->
+>>>>>>> FETCH_HEAD

@@ -9,7 +9,7 @@
     		<!-- start front-page slider -->
     <div id="slider-home">
 <?php 
-    echo do_shortcode("[metaslider id=262]"); 
+    echo do_shortcode("[metaslider id=334]"); 
 ?>    </div>
     		<!-- end front-page slider -->        
 <!-- start content -->
@@ -31,11 +31,16 @@ Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
 	<?php if ( have_posts() ) : ?>
 	<?php while ( have_posts() ) : the_post(); ?> 	   
 		<article class="article-post">
+<<<<<<< HEAD
 			<h2 id="post-<?php the_ID(); ?>" class="post-title">
                     <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a>
              </h2>
              <?php the_excerpt('More &raquo;'); ?><a href="<?php the_permalink() ?>">Read More &raquo;</a> 
             
+=======
+			 
+             <?php the_content(); ?>
+>>>>>>> FETCH_HEAD
    		 </article>
 	<?php endwhile; ?>
         <?php endif; ?>
@@ -44,9 +49,15 @@ Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
              
     </div>
 
+<<<<<<< HEAD
   
     <?php get_sidebar(); ?>
     
     
+=======
+    <!-- start right page sidebar -->
+    <?php get_sidebar(); ?>
+    <!-- end right page sidebar -->
+>>>>>>> FETCH_HEAD
 
 <?php get_footer(); ?>

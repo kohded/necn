@@ -23,9 +23,13 @@
 			
 			</div><!--closing div for right_column_header-->
 			<div class="clear"></div>
+<<<<<<< HEAD
 				<div class="primary-nav">
 					<?php wp_nav_menu($mainMenu);?>
 				</div>
+=======
+			<?php wp_nav_menu($mainMenu);?>
+>>>>>>> FETCH_HEAD
 			<div class="clear"></div>
 	    </header>
 		
