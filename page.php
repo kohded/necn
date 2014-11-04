@@ -14,11 +14,11 @@
 
     <!-- slider -->
     <?php
-<<<<<<< HEAD
+
         echo do_shortcode("[metaslider id=262]");
-=======
+
         echo do_shortcode("[metaslider id=241]");
->>>>>>> FETCH_HEAD
+
     ?>
 
     <!-- start loop -->
@@ -38,11 +38,6 @@
 </main>
 
 <?php get_sidebar(); ?>
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> FETCH_HEAD
 
 <?php get_footer(); ?>

@@ -3,18 +3,18 @@
  * Displaying 404 pages (Not Found)
  * Theme: necn
  */
-<<<<<<< HEAD
+
 ?>
 
 <?php get_header(); ?>
-=======
+
 <? php
 /**
 * Displaying 404 pages (Not Found)
 * Theme: necn
 */
 <? php get_header(): ?>
->>>>>>> FETCH_HEAD
+
 <!-- start page content -->
 <div id="content" class="content-area">
 	
@@ -33,7 +33,7 @@
 <p>You may use the search box in the right sidebar or you can go back to the <a href="<?php bloginfo('url'); ?>">homepage</a> and try again.</p>
 	</main>
 	<!-- end main -->
-<<<<<<< HEAD
+
 <?php // create sidebar call to primary
 	if (is_front_page() ) :
 	get_sidebar( 'primary' );
@@ -44,7 +44,7 @@
 <!-- end page content -->
 
 <?php get_footer(); ?>
-=======
+
 <? php // create sidebar call to primary
 	if (is_front_page() ) :
 	get_sidebar( 'primary' );
@@ -53,4 +53,4 @@
 <!-- end page content -->
 
 <? php get_footer(); ?>
->>>>>>> FETCH_HEAD
+
