@@ -27,7 +27,8 @@
 				<div class="primary-nav">
 					<?php wp_nav_menu($mainMenu);?>
 				</div>
-			<?php wp_nav_menu($mainMenu);?>
+			<?php // wp_nav_menu($mainMenu);
+			?>
 			<div class="clear"></div>
 	    </header>
 		
