@@ -1,4 +1,4 @@
-<? php
+<?php
 /**
  * Displaying 404 pages (Not Found)
  * Theme: necn
@@ -8,12 +8,12 @@
 
 <?php get_header(); ?>
 
-<? php
+<?php
 /**
 * Displaying 404 pages (Not Found)
 * Theme: necn
 */
-<? php get_header(): ?>
+<?php get_header(): ?>
 
 <!-- start page content -->
 <div id="content" class="content-area">
@@ -45,12 +45,12 @@
 
 <?php get_footer(); ?>
 
-<? php // create sidebar call to primary
+<?php // create sidebar call to primary
 	if (is_front_page() ) :
 	get_sidebar( 'primary' );
 ?>
 </div>
 <!-- end page content -->
 
-<? php get_footer(); ?>
+<?php get_footer(); ?>
 
