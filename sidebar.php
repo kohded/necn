@@ -10,8 +10,8 @@
 <!--begin sidebar -->
 <aside class="main-content-right">
 	
-<?php // if is not either the 'not found' or 'search' pages
-	if ( !is_404() ) { if ( !is_search() ) {
+<?php // if is not either the 'not found' or 'search' pages or the 'neighborhood template page'
+	if ( !( is_404() ||  is_search() || is_page_template('neighborhood.php')) ) {
 ?>
 	<!-- begin Sub Pages-->
 <?php
@@ -23,14 +23,16 @@
 $parentname = get_the_title($post->ID);
 }
 	if ($children) { // if has children ?>
-
+	
 		<div id="sub-navigation" class="widget-area">
 	<h2 id="sub-navigation-title"><?php echo $parentname; ?> </h2>
 			<ul id="sub-navigation-items">
 				<?php echo $children; ?>
 			</ul>
 		</div>
-        <?php }}}
+	
+
+        <?php }}
 
 ?>
 <!-- End Sub Pages -->
