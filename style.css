@@ -34,6 +34,10 @@ a {
         text-decoration: none;
 }
 
+header a {
+	float:left;
+}
+
 a img {
         border: none;
 }
@@ -122,7 +126,9 @@ header {
 
 
 /* Primary Navigation */
-
+.primary-nav {
+	width:100%;
+}
 .primary-nav li {
 	font-size: 1em;
 	display: inline-block;
@@ -162,27 +168,35 @@ header {
 .footer-nav li {
 	font-size: .75em;
 	display: inline-table;
-	padding-right: 1.5em;
-	
+	/*padding-right: 1.5em;*/
+	width:13%;
+	text-align:left;
 }
-
+.footer-nav ul ul {
+	padding-top:.5em;
+}
 .footer-nav a {
 	text-decoration: none;
-	color: black;
+	color: #fff;
 }
 
 .footer-nav ul ul li {
 	display:block;
-	font-size: .50em;
-	
+	font-size: .75em;
+	text-align:left;
+	width:100%;	
 }
 
-
+.clear{
+	clear:both;
+}
 
 /* Footer */
 
 footer {
-        max-width: 960px;
+	background-color:#000;
+	color:#fff;
+    max-width: 960px;
 	text-align: center;
-        clear: both;
+    clear: both;
 }
