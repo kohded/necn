@@ -12,6 +12,8 @@
 	</head>
 	<body <?php body_class($class) ?>>
 		<header>
+			<!-- start class content div-->
+			<div class="content">
                         <a href="<?php bloginfo('url'); ?>"><img src="http://placehold.it/350x150"></a>
 			<div class="right-column-header">
 			<div class="right-column-top-header">	
@@ -32,8 +34,11 @@
 				</div>
 			<?php // wp_nav_menu($mainMenu);
 			?>
+
 			<div class="clear"></div>
-	    </header>
+			</div>
+			<!-- end class content div-->
+		</header>
 		
 	<!-- start content -->
         <div class="content">
