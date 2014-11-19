@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- snippet for wp responsive design -->
+		
 		<title><?php bloginfo("name") . wp_title('|'); ?></title>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">

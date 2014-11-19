@@ -3,8 +3,8 @@
  * Theme URI:  http://lking011.com
  * Description: Neighborhood Emergency Communications Network theme for new website
  * Author: ITC210-NECN
- * Author URI: http://lking011.com
- * Version: 1.0
+ * Author URI: http://lking011.com, http://www.pbbwebdesign.com/
+ * Version: 1.2
  * 
  * Tags:
  * 
@@ -20,10 +20,85 @@
         padding: 0;
 }
 
+/* -----------Smartphone View----------- */
+/* All our smartphone rules go inside here */
+/*@media only screen and (min-width : 480px){
+/**   .content {
+*    width: 300px;
+*    }
+*   header {
+*      display: none;
+*      max-width: 300px;
+*   }
+*   /* Main Content */
+*   main-content-left, .content-area {
+*	margin-left: 0;
+*	float: none;
+*	width: auto;
+*   }
+*   main-content-left h1, .content-area h1 {
+*	font-size: 22px;
+*   }   
+*   
+*   /*Post Metadata*/
+*   .post-metadata li {
+*	float: left;
+*	display: inline-block;
+*	font-size: 12px;
+*   }
+*   /*Sidebar*/
+*   .main-content-right {
+*	max-width: 300px;
+*	float: right; 
+*   }
+*   /*Social Media Button*/
+*    .main-content-social-media {
+*        margin: 20px 0;
+*        float: right;
+*   }
+*   /* Main Navigation */
+*    .right-column-header {
+*	float: right;
+*    }
+*    /* Primary Navigation */
+*    .primary-nav {
+*	width:50%;
+*    }
+*    .primary-nav li {
+*	font-size: 1em;
+*	display: block;
+*	text-align: center;
+*	padding: .5em;
+*	margin-left:4%;
+*	margin-right: auto;
+*    }
+*    .primary-nav ul ul {
+*	padding:10px;
+*    }
+*    .primary-nav ul ul li {
+*	display:block;
+*	padding:10px 0;
+*   }
+*    /* Footer */
+*    footer {
+*	background-color:#000;
+*	color:#fff;
+*	max-width: 300px;
+*	text-align: center;
+*	clear: both;
+*    }
+}
+*/
+
+/* -----------Small Tablet View----------- */
+/*   @media only screen and (min-width:481px ) and (max-width:650px) {
+ *   
+ *   }
+ *    IE versions 8 and older don't support media queries,
+ *    you should also place background declarations in a
+ *    separate IE-specific stylesheet for your page */
+
 body {
-        margin: 0 auto;
-        padding: 10px;
-        max-width: 960px;
         font-family:'Open Sans', arial, helvetica, sans-serif;
         font-size: 100%;
         line-height: 1.5;
@@ -39,7 +114,8 @@ a img {
 }
 
 .content {
-        margin: 20px 0;
+        margin: 0 auto;
+        padding: 20px 0;
         max-width: 960px;
 }
 
@@ -98,7 +174,7 @@ a img {
 
 /* Header */
 header {
-        max-width: 960px;
+        width: 100%;
 }
 
 /* Main Navigation */
@@ -194,7 +270,7 @@ header {
 footer {
 	background-color:#000;
 	color:#fff;
-	max-width: 960px;
+	width: 100%;
 	text-align: center;
 	clear: both;
 }
