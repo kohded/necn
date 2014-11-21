@@ -20,83 +20,6 @@
         padding: 0;
 }
 
-/* -----------Smartphone View----------- */
-/* All our smartphone rules go inside here */
-/*@media only screen and (min-width : 480px){
-/**   .content {
-*    width: 300px;
-*    }
-*   header {
-*      display: none;
-*      max-width: 300px;
-*   }
-*   /* Main Content */
-*   main-content-left, .content-area {
-*	margin-left: 0;
-*	float: none;
-*	width: auto;
-*   }
-*   main-content-left h1, .content-area h1 {
-*	font-size: 22px;
-*   }   
-*   
-*   /*Post Metadata*/
-*   .post-metadata li {
-*	float: left;
-*	display: inline-block;
-*	font-size: 12px;
-*   }
-*   /*Sidebar*/
-*   .main-content-right {
-*	max-width: 300px;
-*	float: right; 
-*   }
-*   /*Social Media Button*/
-*    .main-content-social-media {
-*        margin: 20px 0;
-*        float: right;
-*   }
-*   /* Main Navigation */
-*    .right-column-header {
-*	float: right;
-*    }
-*    /* Primary Navigation */
-*    .primary-nav {
-*	width:50%;
-*    }
-*    .primary-nav li {
-*	font-size: 1em;
-*	display: block;
-*	text-align: center;
-*	padding: .5em;
-*	margin-left:4%;
-*	margin-right: auto;
-*    }
-*    .primary-nav ul ul {
-*	padding:10px;
-*    }
-*    .primary-nav ul ul li {
-*	display:block;
-*	padding:10px 0;
-*   }
-*    /* Footer */
-*    footer {
-*	background-color:#000;
-*	color:#fff;
-*	max-width: 300px;
-*	text-align: center;
-*	clear: both;
-*    }
-}
-*/
-
-/* -----------Small Tablet View----------- */
-/*   @media only screen and (min-width:481px ) and (max-width:650px) {
- *   
- *   }
- *    IE versions 8 and older don't support media queries,
- *    you should also place background declarations in a
- *    separate IE-specific stylesheet for your page */
 
 body {
         font-family:'Open Sans', arial, helvetica, sans-serif;
@@ -232,15 +155,12 @@ header {
 	display: block;
 }
 
-
 .primary-nav ul li:hover > ul {
         display: block;
         z-index:10;
 }
 
-
 /* Footer Nav */
-
 
 .footer-nav li {
 	font-size: .75em;
@@ -256,14 +176,12 @@ header {
 	text-decoration: none;
 	color: #fff;
 }
-
 .footer-nav ul ul li {
 	display:block;
 	font-size: .75em;
 	text-align:left;
 	width:100%;	
 }
-
 
 /* Footer */
 
@@ -274,3 +192,84 @@ footer {
 	text-align: center;
 	clear: both;
 }
+
+
+/* -----------Small Tablet View----------- */
+/*   @media only screen and (min-width:481px ) and (max-width:650px) {
+ *   
+ *   }
+ *    IE versions 8 and older don't support media queries,
+ *    you should also place background declarations in a
+ *    separate IE-specific stylesheet for your page */
+
+
+
+/* -----------Smartphone View----------- */
+/* All our smartphone rules go inside here */
+
+.primary-mobile-nav{
+    display: none;
+}
+@media only screen and (max-width : 480px){
+   .content {
+    width: 300px;
+    }
+   header {
+      display: none;
+      max-width: 300px;
+   }
+   /* Main Content */
+   main-content-left, .content-area {
+	margin-left: 0;
+	float: none;
+	width: auto;
+   }
+   main-content-left h1, .content-area h1 {
+	font-size: 22px;
+   }   
+   
+   /*Post Metadata*/
+   .post-metadata li {
+	float: left;
+	display: inline-block;
+	font-size: 12px;
+   }
+   /*Sidebar*/
+   .main-content-right {
+	max-width: 300px;
+	float: right; 
+   }
+   /*Social Media Button*/
+    .main-content-social-media {
+        margin: 20px 0;
+        float: right;
+   }
+   /* Main Navigation */
+   .primary-nav{
+    display: none;
+   }
+   .primary-mobile-nav{
+    display: block;
+   }
+    .right-column-header {
+	float: right;
+    }
+    /* Primary Navigation */
+    .footer-nav {
+	display: none;
+   }
+    
+    /* Footer */
+    footer {
+	margin: 0 auto;
+	background-color:#000;
+	color:#fff;
+	max-width: 300px;
+	text-align: center;
+	clear: both;
+    }
+
+}
+
+
+
