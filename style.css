@@ -3,8 +3,8 @@
  * Theme URI:  http://lking011.com
  * Description: Neighborhood Emergency Communications Network theme for new website
  * Author: ITC210-NECN
- * Author URI: http://lking011.com, http://www.pbbwebdesign.com/
- * Version: 1.2
+ * Author URI: http://lking011.com
+ * Version: 1.0
  * 
  * Tags:
  * 
@@ -20,86 +20,8 @@
         padding: 0;
 }
 
-/* -----------Smartphone View----------- */
-/* All our smartphone rules go inside here */
-/*@media only screen and (min-width : 480px){
-/**   .content {
-*    width: 300px;
-*    }
-*   header {
-*      display: none;
-*      max-width: 300px;
-*   }
-*   /* Main Content */
-*   main-content-left, .content-area {
-*	margin-left: 0;
-*	float: none;
-*	width: auto;
-*   }
-*   main-content-left h1, .content-area h1 {
-*	font-size: 22px;
-*   }   
-*   
-*   /*Post Metadata*/
-*   .post-metadata li {
-*	float: left;
-*	display: inline-block;
-*	font-size: 12px;
-*   }
-*   /*Sidebar*/
-*   .main-content-right {
-*	max-width: 300px;
-*	float: right; 
-*   }
-*   /*Social Media Button*/
-*    .main-content-social-media {
-*        margin: 20px 0;
-*        float: right;
-*   }
-*   /* Main Navigation */
-*    .right-column-header {
-*	float: right;
-*    }
-*    /* Primary Navigation */
-*    .primary-nav {
-*	width:50%;
-*    }
-*    .primary-nav li {
-*	font-size: 1em;
-*	display: block;
-*	text-align: center;
-*	padding: .5em;
-*	margin-left:4%;
-*	margin-right: auto;
-*    }
-*    .primary-nav ul ul {
-*	padding:10px;
-*    }
-*    .primary-nav ul ul li {
-*	display:block;
-*	padding:10px 0;
-*   }
-*    /* Footer */
-*    footer {
-*	background-color:#000;
-*	color:#fff;
-*	max-width: 300px;
-*	text-align: center;
-*	clear: both;
-*    }
-}
-*/
-
-/* -----------Small Tablet View----------- */
-/*   @media only screen and (min-width:481px ) and (max-width:650px) {
- *   
- *   }
- *    IE versions 8 and older don't support media queries,
- *    you should also place background declarations in a
- *    separate IE-specific stylesheet for your page */
-
 body {
-        font-family:'Open Sans', arial, helvetica, sans-serif;
+        font-family:'Open Sans', helvetica, arial, sans-serif;
         font-size: 100%;
         line-height: 1.5;
         color: #000000;
@@ -112,10 +34,19 @@ a {
 a img {
         border: none;
 }
-
+.header-content {
+		margin: auto;
+        padding: 5px 0;
+        max-width: 960px;
+}
+.footer-content {
+		margin: auto;
+        padding: 5px 0;
+        max-width: 960px;
+}
 .content {
-        margin: 0 auto;
-        padding: 20px 0;
+		margin: auto;
+        padding: 5px 0;
         max-width: 960px;
 }
 
@@ -174,7 +105,7 @@ a img {
 
 /* Header */
 header {
-        width: 100%;
+       width: 100%;
 }
 
 /* Main Navigation */
@@ -198,7 +129,6 @@ header {
 
 
 /* Primary Navigation */
-
 .primary-nav li {
 	font-size: 1em;
 	display: inline-block;
@@ -210,38 +140,74 @@ header {
 
 .primary-nav ul:first-child>li {
 	margin:0;
-	padding: 0;
+	padding: .75em 0;
 	width:14.28571428571429%;
-	background-color:#3399D1;
 	float:left;
+	background-color:#3399D1;
+}
+
+.primary-nav ul:first-child>li a:hover{
+	background-color:#3399D1;
+}
+
+.primary-nav ul:first-child>li:first-child {
+	border-top-left-radius:7px;
+	border-bottom-left-radius:7px;
+}
+
+.primary-nav ul:first-child>li:last-child {
+	border-top-right-radius:7px;
+	border-bottom-right-radius:7px;
 }
 
 .primary-nav a {
 	text-decoration: none;
 	color: black;
+	display:block;
 }
 
 .primary-nav ul ul {
 	position: absolute;
 	display: none;
+	
 }
 
 .primary-nav ul ul li {
 	position: relative;
 	font-size: .75em;
 	display: block;
+	background-color:#3399D1;
+	width:100%;
 }
 
+.primary-nav ul ul li:last-child {
+	border-bottom-right-radius:7px;
+	border-bottom-left-radius:7px;
+}
 
 .primary-nav ul li:hover > ul {
         display: block;
         z-index:10;
 }
 
+/*SIDEBAR*/
+.widget-title, #sub-navigation-title {
+	color:#Fff;
+	background-color:#3399D1;
+	border-radius:5px;
+	padding-left:2px;
+}
+
+.widget, #sub-navigation  {
+	border:#3399D1 1px solid;
+	border-radius:10px;
+	margin-bottom:20px;
+}
+
+
+
 
 /* Footer Nav */
-
-
 .footer-nav li {
 	font-size: .75em;
 	display: inline-table;
@@ -273,4 +239,5 @@ footer {
 	width: 100%;
 	text-align: center;
 	clear: both;
-}
+}/* CSS Document */
+
