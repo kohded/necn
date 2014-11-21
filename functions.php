@@ -58,4 +58,23 @@ function my_register_sidebars() {
         ) );
     }
     endif;
+    
+//   Add mobile menu location - change theme name if changed for launch
+//  Add the new location to the header.php file
+    function extra_setup()
+    {
+register_nav_menu('primary mobile', __('Navigation Mobile', 'NECNLocal'));
+    }
+    add_action('after_setup_theme', 'extra_setup');
+    
+//  Set Classes for the menus using wp_nav_menu_args filter
+// wp will output our 2 menus wrapped in <div class="primary-nav"> and <div class="primary-mobile-nav"> elements repsctively
+	function set_container_class ($args)
+	{
+		$args['container_class']= str_replace(' ','-'.$args['theme_location']).'-nav'; return $args;	
+	}
+	add_filter('wp_nav_menu_args','set_container_class')
+
+
+
 ?>
