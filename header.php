@@ -24,13 +24,13 @@
 				</ul>
 			</div>
 			
-				
-			
 			</div><!--closing div for right_column_header-->
 			<div class="clear"></div>
-
+			
+					<!-- add mobile nav below main nav within div, this generates the HTML for new menu location-->
 				<div class="primary-nav">
 					<?php wp_nav_menu($mainMenu);?>
+					<?php wp_nav_menu( array('theme_location' => 'primary mobile', 'menu_class' => 'nav_menu')); ?>
 				</div>
 			<?php // wp_nav_menu($mainMenu);
 			?>
