@@ -59,5 +59,3 @@ function my_register_sidebars() {
     }
     endif;
     
-//   Add mobile menu location - change theme name if changed for launch
-//  Add the new location to the header.php file
