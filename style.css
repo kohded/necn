@@ -215,10 +215,17 @@ footer {
     width: 300px;
     }
    header {
-      display: none;
+      //display: none;
       max-width: 300px;
    }
+   /* Slider */
+    #slider-home {
+	display: none;
+	max-width: 300px;
+    }
+   
    /* Main Content */
+   
    main-content-left, .content-area {
 	margin-left: 0;
 	float: none;
@@ -249,6 +256,14 @@ footer {
     display: none;
    }
    .primary-mobile-nav{
+	display: block;
+   }
+   
+   .primary-mobile-nav ul.menu {
+    display: none;
+   }
+   
+   .primary-mobile-nav:hover ul.menu {
     display: block;
    }
     .right-column-header {
