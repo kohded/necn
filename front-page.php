@@ -49,10 +49,6 @@ Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
              
     </div>
 
-  
-    <?php get_sidebar(); ?>
-    
-    
 
     <!-- start right page sidebar -->
     <?php get_sidebar(); ?>
