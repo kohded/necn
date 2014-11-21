@@ -29,11 +29,11 @@
 			
 					<!-- add mobile nav below main nav within div, this generates the HTML for new menu location-->
 				<div class="primary-nav">
-					<?php wp_nav_menu("main_menu");?>
+					<?php display_multisite_global_menu(); ?>
 				</div>
 				<div class="primary-mobile-nav">
 					<a class="show-menu">MENU</a>
-					<?php wp_nav_menu("main_menu"); ?>
+					<?php display_multisite_global_menu(); ?>
 				</div>
 			<?php // wp_nav_menu($mainMenu);
 			?>

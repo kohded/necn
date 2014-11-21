@@ -1,5 +1,18 @@
 <?php
 
+function display_multisite_global_menu() {
+	//function for getting a global menu
+	//that caching plugin really was ridiculous, wasn't it?
+	if (is_multisite() && !is_main_site()) {
+		switch_to_blog(1); //should send us to the main site temporarily
+	}
+	$globalMenu = "";
+	wp_nav_menu($globalMenu); //get the nav menu from the main site context
+	if (is_multisite() && ms_is_switched()) {
+		restore_current_blog(); //revert to the network site if we switched it above
+	}
+}
+
 register_nav_menu("footer_menu", "Footer Menu");
 
 $footerMenu = array (
@@ -8,15 +21,15 @@ $footerMenu = array (
 	"container_class" => "",
 	"container_id" => "footer_menu"
 );
-	
 
-register_nav_menu("main_menu", "Main Menu");
 
-$mainMenu =  array (
-	"theme_location" => "main_menu",
+register_nav_menu("global_menu", "Global Menu");
+
+$globalMenu =  array (
+	"theme_location" => "global_menu",
 	"container" => "nav",
 	"container_class" => "",
-	"container_id" => "main_menu"
+	"container_id" => "global_menu"
 );
 
 
