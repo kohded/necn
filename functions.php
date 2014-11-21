@@ -71,7 +71,7 @@ register_nav_menu('primary mobile', __('Navigation Mobile', 'NECNLocal'));
 // wp will output our 2 menus wrapped in <div class="primary-nav"> and <div class="primary-mobile-nav"> elements repsctively
 	function set_container_class ($args)
 	{
-		$args['container_class']= str_replace(' ','-'.$args['theme_location']).'-nav'; return $args;	
+		$args['container_class']= str_replace(' ','-',$args['theme_location']).'-nav'; return $args;	
 	}
 	add_filter('wp_nav_menu_args','set_container_class')
 
