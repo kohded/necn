@@ -32,7 +32,7 @@
 					<?php wp_nav_menu("main_menu");?>
 				</div>
 				<div class="primary-mobile-nav">
-					MENU
+					<a class="show-menu">MENU</a>
 					<?php wp_nav_menu("main_menu"); ?>
 				</div>
 			<?php // wp_nav_menu($mainMenu);
