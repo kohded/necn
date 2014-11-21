@@ -259,9 +259,10 @@ footer {
 	display: block;
 	position: relative;
    }
-   
+   /*strip the ul of list styling*/
    .primary-mobile-nav ul.menu {
     display: none;
+    list-style-type: none; 
     position: absolute;
     background: pink;
     width: 100%;
@@ -271,6 +272,7 @@ footer {
    .primary-mobile-nav.show ul.menu {
     display: block;
    }
+
     .right-column-header {
 	float: right;
     }
