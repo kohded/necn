@@ -257,13 +257,18 @@ footer {
    }
    .primary-mobile-nav{
 	display: block;
+	position: relative;
    }
    
    .primary-mobile-nav ul.menu {
     display: none;
+    position: absolute;
+    background: pink;
+    width: 100%;
+    z-index: 999999;
    }
-   
-   .primary-mobile-nav:hover ul.menu {
+   /*class of show will make menu appear*/
+   .primary-mobile-nav.show ul.menu {
     display: block;
    }
     .right-column-header {
