@@ -6,8 +6,7 @@ function display_multisite_global_menu() {
 	if (is_multisite() && !is_main_site()) {
 		switch_to_blog(1); //should send us to the main site temporarily
 	}
-	$globalMenu = "";
-	wp_nav_menu($globalMenu); //get the nav menu from the main site context
+	wp_nav_menu("global_menu"); //get the nav menu from the main site context
 	if (is_multisite() && ms_is_switched()) {
 		restore_current_blog(); //revert to the network site if we switched it above
 	}
