@@ -29,8 +29,11 @@
 			
 					<!-- add mobile nav below main nav within div, this generates the HTML for new menu location-->
 				<div class="primary-nav">
-					<?php wp_nav_menu($mainMenu);?>
-					<?php wp_nav_menu( array('theme_location' => 'primary mobile', 'menu_class' => 'nav_menu')); ?>
+					<?php wp_nav_menu("main_menu");?>
+				</div>
+				<div class="primary-mobile-nav">
+					MENU
+					<?php wp_nav_menu("main_menu"); ?>
 				</div>
 			<?php // wp_nav_menu($mainMenu);
 			?>
