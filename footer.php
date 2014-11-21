@@ -12,5 +12,14 @@
 	<!--end footer class content div-->
 </footer>
 <?php wp_footer(); ?>
+<script>
+	//selects show menu link and on clikc runs a function = 
+	jQuery(".show-menu").on("click", function() {
+		var $this = jQuery(this);
+		//this finds the menu inside the parent container and slides it up or down
+		// the parentis only for the mobile and will not show on desk top
+		$this.closest(".primary-mobile-nav").find(".menu").slideToggle();
+	})
+</script>
 </body>
 </html>
