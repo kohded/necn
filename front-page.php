@@ -36,10 +36,6 @@ Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
                     <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a>
              </h2>
              <?php the_excerpt('More &raquo;'); ?><a href="<?php the_permalink() ?>">Read More &raquo;</a> 
-            
-
-			 
-             <?php the_content(); ?>
 
    		 </article>
 	<?php endwhile; ?>
