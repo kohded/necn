@@ -25,28 +25,20 @@ body {
         font-size: 100%;
         line-height: 1.5;
         color: #000000;
-
 }
 
 a {
         text-decoration: none;
 }
-img {
-	max-width:100%;
-}
+
 a img {
         border: none;
-}
-header {
-		background:url(../necn/images/header.png) no-repeat scroll center top;	
 }
 .header-content {
 		margin: auto;
         padding: 5px 0;
         max-width: 960px;
-		
 }
-
 .footer-content {
 		margin: auto;
         padding: 5px 0;
@@ -54,16 +46,13 @@ header {
 }
 .content {
 		margin: auto;
-/*		padding:5px;*/
+        padding: 5px 0;
         max-width: 960px;
-		overflow:hidden;
-/*		background-color:#F8F4F4;*/
 }
 
 /* Main Content */
 .main-content-left, .content-area {
-        max-width: 615px;
-		padding-left:5px;
+        max-width: 620px;
         float: left;
 }
 
@@ -87,8 +76,7 @@ header {
 
 /* Sidebar */
 .main-content-right {
-        max-width: 295px;
-		padding-right:5px;
+        max-width: 300px;
         float: right;
 }
 
@@ -118,7 +106,6 @@ header {
 /* Header */
 header {
        width: 100%;
-	   margin-bottom:10px;
 }
 
 /* Main Navigation */
@@ -174,10 +161,6 @@ header {
 	color:#fff;
 }
 
-.primary-nav ul:first-child>li:hover{
-	background-color:#1D6289;
-}
-
 .primary-nav ul:first-child>li a:hover{
 	text-shadow: #000 1px 1px;
 }
@@ -202,6 +185,7 @@ header {
 .primary-nav ul ul {
 	position: absolute;
 	display: none;
+	
 }
 
 .primary-nav ul ul li {
@@ -220,20 +204,9 @@ header {
 	border-bottom-left-radius:7px;
 }
 
-.primary-nav ul ul li:first-child {
-	border-top-right-radius:7px;
-	border-top-left-radius:7px;
-}
-
 .primary-nav ul li:hover > ul {
         display: block;
         z-index:10;
-}
-
-
-/*****************************POSTS***********************************************/
-.article-post {
-	padding:10px 0px;
 }
 
 /*SIDEBAR*/
@@ -242,7 +215,6 @@ header {
 	background-color:#3399D1;
 	border-radius:5px;
 	padding-left:2px;
-	padding-left:.25em;
 }
 
 .widget, #sub-navigation  {
@@ -251,9 +223,12 @@ header {
 	margin-bottom:20px;
 }
 
-.textwidget, #sub-navigation-items, .widget_recent_entries ul {
+.textwidget {
 	padding: 2%;
 }
+
+
+
 
 /* Footer Nav */
 .footer-nav li {
@@ -263,32 +238,27 @@ header {
 	width:13%;
 	text-align:left;
 }
-
 .footer-nav ul ul {
 	padding-top:.5em;
 }
-
 .footer-nav a {
 	text-decoration: none;
-	color:#D0CFCF;
-}
-
-.footer-nav a:hover {
-	color:#3399D1;
+	color: #fff;
 }
 
 .footer-nav ul ul li {
 	display:block;
-	font-size: .90em;
+	font-size: .75em;
 	text-align:left;
 	width:100%;	
 }
+
 
 /* Footer */
 
 footer {
 	background-color:#000;
-	color:#D0CFCF;
+	color:#fff;
 	width: 100%;
 	text-align: center;
 	clear: both;
