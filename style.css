@@ -212,7 +212,8 @@ footer {
 }
 @media only screen and (max-width : 480px){
    .content {
-    width: 300px;
+    box-sizing: border-box;
+    width: 50%;
     }
    header {
       //display: none;
