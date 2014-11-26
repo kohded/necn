@@ -25,41 +25,7 @@ Template Name: Neighborhood
 <!-- start loop -->
 <!--start content -->
 <main class="main-content-left" role="main">
-	<h1>Neighborhood Info</h1>
-	
-	<h2>Hub Locations</h2>
-	<p>Several neighborhoods in Seattle have formed "Neighborhood Emergency Hub Locations", where neighbors can get reliable information
-	and assitance in the case of a disaster. Click on your neighborhood below to find out what is happening.  If your neighborhood is not
-	organized, perhaps you can help it get prepared.</p>
-	&nbsp;
-	<p>Findout more at <a href="http://seattle.gov/emergency" target="_blank">Seattle.gov/emergency</a></p>
-	&nbsp;
-	<ul>
-	<li>Ballard</li>	
-	<li>Broadview</li>	
-	<li>Capitol Hill</li>
-	<li>Central District</li>	
-	<li>Crown Hill</li>	
-	<li>Fremont</li>
-	<li>Greenwood</li>	
-	<li>Interbay</li>	
-	<li>Lake City</li>
-	<li>Magnolia</li>	
-	<li>Maple Leaf</li>	
-	<li>North East Seattle</li>
-	<li>Queen Anne</li>	
-	<li>Rainier Beach</li>	
-	<li>Shilshole Bay</li>
-	<li>Wallingford</li>
-	<li>Wedgewood</li>
-	<li>West Seattle</li>
-	</ul>
-	
-	
-	
-	
-	
-	
+
     <?php if (have_posts()) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
             <article class="article-post">
