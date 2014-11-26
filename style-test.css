@@ -20,34 +20,25 @@
         padding: 0;
 }
 
-
 body {
-        font-family:'Open Sans', arial, helvetica, sans-serif;
+        font-family:'Open Sans', helvetica, arial, sans-serif;
         font-size: 100%;
         line-height: 1.5;
         color: #000000;
-
 }
 
 a {
         text-decoration: none;
 }
-img {
-	max-width:100%;
-}
+
 a img {
         border: none;
-}
-header {
-		background:url(../necn/images/header.png) no-repeat scroll center top;	
 }
 .header-content {
 		margin: auto;
         padding: 5px 0;
         max-width: 960px;
-		
 }
-
 .footer-content {
 		margin: auto;
         padding: 5px 0;
@@ -55,16 +46,13 @@ header {
 }
 .content {
 		margin: auto;
-/*		padding:5px;*/
+        padding: 5px 0;
         max-width: 960px;
-		overflow:hidden;
-/*		background-color:#F8F4F4;*/
 }
 
 /* Main Content */
 .main-content-left, .content-area {
-        max-width: 615px;
-		padding-left:5px;
+        max-width: 620px;
         float: left;
 }
 
@@ -88,8 +76,7 @@ header {
 
 /* Sidebar */
 .main-content-right {
-        max-width: 295px;
-		padding-right:5px;
+        max-width: 300px;
         float: right;
 }
 
@@ -119,7 +106,6 @@ header {
 /* Header */
 header {
        width: 100%;
-	   margin-bottom:10px;
 }
 
 /* Main Navigation */
@@ -175,10 +161,6 @@ header {
 	color:#fff;
 }
 
-.primary-nav ul:first-child>li:hover{
-	background-color:#1D6289;
-}
-
 .primary-nav ul:first-child>li a:hover{
 	text-shadow: #000 1px 1px;
 }
@@ -197,12 +179,13 @@ header {
 	text-decoration: none;
 	color: black;
 	display:block;
-	padding: .3em;
+	padding: .75em;
 }
 
 .primary-nav ul ul {
 	position: absolute;
 	display: none;
+	
 }
 
 .primary-nav ul ul li {
@@ -211,8 +194,14 @@ header {
 	display: block;
 	background-color:#3399D1;
 	width:100%;
-	text-align:left;
-	padding: 0 10%;
+}
+.primary-nav a {
+	padding: .3em;
+}
+
+.primary-nav ul ul li:last-child {
+	border-bottom-right-radius:7px;
+	border-bottom-left-radius:7px;
 }
 
 .primary-nav ul li:hover > ul {
@@ -220,21 +209,12 @@ header {
         z-index:10;
 }
 
-
-
-/*****************************POSTS***********************************************/
-.article-post {
-	padding:10px 0px;
-}
-
 /*SIDEBAR*/
 .widget-title, #sub-navigation-title {
 	color:#fff;
 	background-color:#3399D1;
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
+	border-radius:5px;
 	padding-left:2px;
-	padding-left:.25em;
 }
 
 .widget, #sub-navigation  {
@@ -243,9 +223,12 @@ header {
 	margin-bottom:20px;
 }
 
-.textwidget, #sub-navigation-items, .widget_recent_entries ul {
+.textwidget {
 	padding: 2%;
 }
+
+
+
 
 /* Footer Nav */
 .footer-nav li {
@@ -255,138 +238,29 @@ header {
 	width:13%;
 	text-align:left;
 }
-
 .footer-nav ul ul {
 	padding-top:.5em;
 }
-
 .footer-nav a {
 	text-decoration: none;
-	color:#D0CFCF;
+	color: #fff;
 }
 
-.footer-nav a:hover {
-	color:#3399D1;
-}
 .footer-nav ul ul li {
 	display:block;
-	font-size: .90em;
+	font-size: .75em;
 	text-align:left;
 	width:100%;	
 }
+
 
 /* Footer */
 
 footer {
 	background-color:#000;
-	color:#D0CFCF;
+	color:#fff;
 	width: 100%;
 	text-align: center;
 	clear: both;
-
-}
-
-
-/* -----------Small Tablet View----------- */
-/*   @media only screen and (min-width:481px ) and (max-width:650px) {
- *   
- *   }
- *    IE versions 8 and older don't support media queries,
- *    you should also place background declarations in a
- *    separate IE-specific stylesheet for your page */
-
-
-
-/* -----------Smartphone View----------- */
-/* All our smartphone rules go inside here */
-
-.primary-mobile-nav{
-    display: none;
-}
-@media only screen and (max-width : 480px){
-   .content {
-    box-sizing: border-box;
-    width: 50%;
-    }
-   header {
-      //display: none;
-      max-width: 300px;
-   }
-   /* Slider */
-    #slider-home {
-	display: none;
-	max-width: 300px;
-    }
-   
-   /* Main Content */
-   
-   main-content-left, .content-area {
-	margin-left: 0;
-	float: none;
-	width: auto;
-   }
-   main-content-left h1, .content-area h1 {
-	font-size: 22px;
-   }   
-   
-   /*Post Metadata*/
-   .post-metadata li {
-	float: left;
-	display: inline-block;
-	font-size: 12px;
-   }
-   /*Sidebar*/
-   .main-content-right {
-	max-width: 300px;
-	float: right; 
-   }
-   /*Social Media Button*/
-    .main-content-social-media {
-        margin: 20px 0;
-        float: right;
-   }
-   /* Main Navigation */
-   .primary-nav{
-    display: none;
-   }
-   .primary-mobile-nav{
-	display: block;
-	position: relative;
-   }
-   /*strip the ul of list styling*/
-   .primary-mobile-nav ul.menu {
-    display: none;
-    list-style-type: none; 
-    position: absolute;
-    background: pink;
-    width: 100%;
-    z-index: 999999;
-   }
-   /*class of show will make menu appear*/
-   .primary-mobile-nav.show ul.menu {
-    display: block;
-   }
-
-    .right-column-header {
-	float: right;
-    }
-    /* Primary Navigation */
-    .footer-nav {
-	display: none;
-   }
-    
-    /* Footer */
-    footer {
-	margin: 0 auto;
-	background-color:#000;
-	color:#fff;
-	max-width: 300px;
-	text-align: center;
-	clear: both;
-    }
-
-}
-
-
-
+}/* CSS Document */
 
