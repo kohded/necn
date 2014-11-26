@@ -10,8 +10,8 @@
 <!--begin sidebar -->
 <aside class="main-content-right">
 	
-<?php // if is not either the 'not found' or 'search' pages or the 'neighborhood template page'
-	if ( !( is_404() ||  is_search() || is_page_template('neighborhood.php')) ) {
+<?php // if is not either the 'not found' or 'search' pages or the 'page-neighborhood template page'
+	if ( !( is_404() ||  is_search() || is_page_template('page-neighborhood.php')) ) {
 ?>
 	<!-- begin Sub Pages-->
 <?php
