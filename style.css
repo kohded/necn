@@ -196,7 +196,7 @@ header {
 	text-decoration: none;
 	color: black;
 	display:block;
-	padding: .75em;
+	padding: .3em;
 }
 
 .primary-nav ul ul {
@@ -210,19 +210,8 @@ header {
 	display: block;
 	background-color:#3399D1;
 	width:100%;
-}
-.primary-nav a {
-	padding: .3em;
-}
-
-.primary-nav ul ul li:last-child {
-	border-bottom-right-radius:7px;
-	border-bottom-left-radius:7px;
-}
-
-.primary-nav ul ul li:first-child {
-	border-top-right-radius:7px;
-	border-top-left-radius:7px;
+	text-align:left;
+	padding: 0 10%;
 }
 
 .primary-nav ul li:hover > ul {
@@ -240,7 +229,8 @@ header {
 .widget-title, #sub-navigation-title {
 	color:#fff;
 	background-color:#3399D1;
-	border-radius:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
 	padding-left:2px;
 	padding-left:.25em;
 }
