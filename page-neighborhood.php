@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Neighborhood 
+Template Name: Page-Neighborhood 
 */
 ?>
 
