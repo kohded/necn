@@ -71,3 +71,34 @@ function my_register_sidebars() {
     }
     endif;
     
+// Get My Title Tag for SEO - also line #8 header.php
+function get_my_title_tag() {
+    
+    global $post;
+    
+    if ( is_home() || is_archive() || is_front_page()) {  // for the Blog (Home) Page, Blog (Archives) Pages or the site’s Front Page
+    
+        bloginfo('description'); // retrieve the site tagline
+    
+    } 
+    
+    elseif ( is_page() || is_single() ) { // for your site’s Pages or Postings
+    
+        the_title(); // retrieve the page or posting title 
+    
+    } 
+    
+    if ( $post->post_parent ) { // for your site’s Parent Pages
+    
+        echo ' | '; // separator with spaces
+        echo get_the_title($post->post_parent);  // retrieve the parent page title
+        
+    }
+
+    echo ' | '; // separator with spaces
+    bloginfo('name'); // retrieve the site name
+    echo ' | '; // separator with spaces
+    echo 'Seattle, WA'; // write in the location
+    
+}    
+    
