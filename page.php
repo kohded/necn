@@ -15,15 +15,14 @@
     <!-- slider -->
     <?php
 
-        echo do_shortcode("[metaslider id=262]");
-
-        echo do_shortcode("[metaslider id=241]");
+        echo do_shortcode("[metaslider id=334]");
 
     ?>
 
     <!-- start loop -->
     <?php if (have_posts()) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
+	<p><small>Posted by <?php the_author(); ?> in <?php the_category(', ') ?></small></p>
             <article class="article-post">
                 <?php the_content(); ?>
             </article>
