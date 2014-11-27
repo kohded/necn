@@ -326,7 +326,7 @@ footer {
 	width: auto;
    }
    main-content-left h1, .content-area h1 {
-	font-size: 22px;
+	font-size: 20px;
    }   
    
    /*Post Metadata*/
@@ -358,7 +358,7 @@ footer {
     display: none;
     list-style-type: none; 
     position: absolute;
-    background: pink;
+    background: #3399D1;
     width: 100%;
     z-index: 999999;
    }
@@ -366,7 +366,50 @@ footer {
    .primary-mobile-nav.show ul.menu {
     display: block;
    }
+   
+   /*RESPONSIVE NAV*/
 
+    .primary-mobile-nav{
+    width:100%;
+    position:relative;
+    font-size:16px;
+    font-weight:500;
+    z-index:1;
+    }
+
+/*MENU AUTO CLOSES ON REFRESH*/
+    ul.menu{
+    display:none;
+    position:absolute;
+    top:25px;
+    right:20px;
+    }
+    
+    ul.menu li.last, ul.menu li.last a{
+    border-radius:0 0 5px 5px;
+    }
+ 
+/*MENU WIDTH AND POSITION AFTER BUTTON CLICK, BULLETS*/
+    ul.menu{
+    width:95%;
+    float:right;
+    position:relative;
+    list-style:none;
+    }
+ 
+    ul.menu a{
+    padding:10px 20px;
+    display:block;
+    text-decoration:none;
+    color:#FFF;
+    border-bottom:1px solid #fff;
+    background-color:#3399d1;
+    }
+ 
+    ul.menu li.first a{
+    border-top:1px solid #fff;
+    }
+    
     .right-column-header {
 	float: right;
     }
