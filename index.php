@@ -21,13 +21,14 @@
                 </h2>
                 <!-- start post metadata -->
                 <ul class="post-metadata">
-                    <li><span class="author"><?php the_author_posts_link(); ?> &#8226; </span></li>
-                    <li><span class="cat"><?php the_category(', ') ?> &#8226; </span></li>
-                    <li><span class="date"><?php the_time('l, F jS, Y') ?> &#8226; </span></li>
-                    <li><span class="comments"><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></span></li>
+               		<small>
+                    <li><span class="author">Posted by <?php the_author_posts_link(); ?> </span></li>
+                    <li><span class="cat">about <?php the_category(', ') ?>  </span></li>
+                    <li><span class="date">on <?php the_time('l, F jS, Y') ?>  </span></li>
+                    </small>
                 </ul>
                 <?php // the_content('More &raquo;'); ?>
-                <?php the_excerpt('More &raquo;'); ?><a href="<?php the_permalink() ?>">Read More &raquo;</a>
+                <?php the_excerpt(); ?><a href="<?php the_permalink() ?>">Read More &raquo;</a>
                 <?php // edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
             </article>
         <?php endwhile; ?>
