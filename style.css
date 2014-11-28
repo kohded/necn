@@ -337,7 +337,7 @@ footer {
    }
    /*Sidebar*/
    .main-content-right {
-	max-width: 300px;
+	max-width: 50%;
 	float: right; 
    }
    /*Social Media Button*/
