@@ -71,6 +71,10 @@ function my_register_sidebars() {
     }
     endif;
     
+// Create Page Excerpts for SEO
+add_post_type_support( 'page', 'excerpt' );
+//    
+    
 // Get My Title Tag for SEO - also line #8 header.php
 function get_my_title_tag() {
     
