@@ -8,13 +8,6 @@
 
 <?php get_header(); ?>
 
-<?php
-/**
-* Displaying 404 pages (Not Found)
-* Theme: necn
-*/
-<?php get_header(): ?>
-
 <!-- start page content -->
 <div id="content" class="content-area">
 	
@@ -43,14 +36,6 @@
 </div>
 <!-- end page content -->
 
-<?php get_footer(); ?>
-
-<?php // create sidebar call to primary
-	if (is_front_page() ) :
-	get_sidebar( 'primary' );
-?>
-</div>
-<!-- end page content -->
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
-
