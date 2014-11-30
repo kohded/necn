@@ -14,9 +14,7 @@
 
     <!-- slider -->
     <?php
-
-        echo do_shortcode("[metaslider id=334]");
-
+        display_metaslider_by_slug(); //functions.php
     ?>
 
     <!-- start loop -->

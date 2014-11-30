@@ -5,14 +5,13 @@
 ?>
 <?php get_header(); ?>
 		
-    		<!-- start front-page slider -->
-    <div id="slider-home">
-<?php 
-    echo do_shortcode("[metaslider id=334]"); 
-?>    </div>
-    		<!-- end front-page slider -->        
+    <!-- start front-page slider -->
+	<?php
+		display_metaslider_by_slug(); //functions.php
+	?>
+    <!-- end front-page slider -->
 
-<!-- start content -->
+	<!-- start content -->
 	<div class="content-area">
         <!-- start posts -->            
             	

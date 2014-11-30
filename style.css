@@ -299,7 +299,7 @@ header {
 	display:block;
 	font-size: .90em;
 	text-align:left;
-	width:100%;	
+	width:100%;
 }
 
 /* Footer */
@@ -317,20 +317,20 @@ footer {
 /* -----------Small Tablet View----------- */ 
  
 @media only screen and (min-width:481px ) and (max-width:920px) {
-   
+
  .footer-nav{
    	display: none;
    }
-   
+
 .content {
     box-sizing: border-box;
     width: 93%;
     }
- 
+
 .main-content-left, .content-area {
 	max-width: 63%;
 }
-    
+
 .main-content-right {
 	max-width: 30%;
 	float:right;
@@ -339,7 +339,7 @@ footer {
 .main-content-social-media {
 	display:none;
 }
-   
+
 }
 
 
@@ -363,9 +363,9 @@ footer {
 	display: none;
 	max-width: 300px;
     }
-   
+
    /* Main Content */
-   
+
    .main-content-left, .content-area {
 	margin-left: 0;
 	float: none;
@@ -373,8 +373,8 @@ footer {
    }
    .main-content-left h1, .content-area h1 {
 	font-size: 20px;
-   }   
-   
+   }
+
    /*Post Metadata*/
    .post-metadata li {
 	float: left;
@@ -384,7 +384,7 @@ footer {
    /*Sidebar*/
    .main-content-right {
 	max-width: 50%;
-	float: right; 
+	float: right;
    }
    /*Social Media Button*/
     .main-content-social-media {
@@ -402,7 +402,7 @@ footer {
    /*strip the ul of list styling*/
    .primary-mobile-nav ul.menu {
     display: none;
-    list-style-type: none; 
+    list-style-type: none;
     position: absolute;
     background: #3399D1;
     width: 100%;
@@ -412,7 +412,7 @@ footer {
    .primary-mobile-nav.show ul.menu {
     display: block;
    }
-   
+
    /*RESPONSIVE NAV*/
 
     .primary-mobile-nav{
@@ -430,11 +430,11 @@ footer {
     top:25px;
     right:20px;
     }
-    
+
     ul.menu li.last, ul.menu li.last a{
     border-radius:0 0 5px 5px;
     }
- 
+
 /*MENU WIDTH AND POSITION AFTER BUTTON CLICK, BULLETS*/
     ul.menu{
     width:95%;
@@ -442,7 +442,7 @@ footer {
     position:relative;
     list-style:none;
     }
- 
+
     ul.menu a{
     padding:10px 20px;
     display:block;
@@ -451,11 +451,11 @@ footer {
     border-bottom:1px solid #fff;
     background-color:#3399d1;
     }
- 
+
     ul.menu li.first a{
     border-top:1px solid #fff;
     }
-    
+
     .right-column-header {
 	float: right;
     }
@@ -463,7 +463,7 @@ footer {
     .footer-nav {
 	display: none;
    }
-    
+
     /* Footer */
     footer {
 	margin: 0 auto;

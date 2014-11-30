@@ -13,13 +13,9 @@ Template Name: Neighborhood
     <!-- end breadcrumbs -->
     
     <!-- slider -->
-    <div id="slider-home">
     <?php
-
-        echo do_shortcode("[metaslider id=334]");
-
+        display_metaslider_by_slug(); //functions.php
     ?>
-    </div>
     <!-- end front-page slider -->
     
 <!-- start loop -->

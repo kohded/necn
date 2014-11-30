@@ -49,7 +49,7 @@ function my_register_sidebars() {
 	) );
 
 
-	}
+}
     
 //    Numbered pagination for posts
     if ( ! function_exists( 'numbered_pagination' ) ) :
@@ -100,5 +100,64 @@ function get_my_title_tag() {
     echo ' | '; // separator with spaces
     echo 'Seattle, WA'; // write in the location
     
-}    
-    
+}
+
+
+/**
+ * MetaSlider plugin shortcode slug
+ * Filter the shortcode attributes.
+ * If the ID parameter is not an integer, assume it is a slug.
+ * Convert the slug to an ID and return the attributes.
+ */
+function metaslider_shortcode_slug( $atts ) {
+
+	if ( isset( $atts['id'] ) && ! is_int( $atts['id'] ) ) {
+
+		$slider = get_page_by_path( $atts['id'], OBJECT, 'ml-slider' );
+
+		if ( $slider ) {
+			$atts['id'] = $slider->ID;
+		}
+
+	}
+
+	return $atts;
+
+}
+add_filter('shortcode_atts_metaslider', 'metaslider_shortcode_slug', 10, 3);
+
+/**
+ * Ensure the post_name (slug) is updated when a slideshow title
+ * is updated.
+ */
+function metaslider_update_slug_on_save( $data , $postarr ) {
+
+	if ( isset( $postarr['post_type'] ) && $postarr['post_type'] == 'ml-slider' ) {
+
+		$data[ 'post_name' ] = sanitize_title( $postarr[ 'post_title' ] );
+
+	}
+
+	return $data;
+	var_dump($data);
+}
+add_filter( 'wp_insert_post_data' , 'metaslider_update_slug_on_save' , 10, 2 );
+
+// Displays the slider based on the page and slug
+function display_metaslider_by_slug() {
+	if ( is_front_page() ) {
+		echo do_shortcode("[metaslider id=front-page]");
+	}
+	elseif ( is_page() ) {
+		echo do_shortcode("[metaslider id=page]");
+	}
+	elseif ( is_page( 'neighborhood' ) ) {
+		echo do_shortcode("[metaslider id=page-neighborhood]");
+	}
+	elseif ( is_page_template('neighborhood.php') ) {
+		echo do_shortcode("[metaslider id=neighborhood]");
+	}
+	else {
+		echo do_shortcode("[metaslider id=default]");
+	}
+}
