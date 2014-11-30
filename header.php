@@ -57,8 +57,6 @@
 					<a href="#menu" class="show-menu"><img src="../images/nav.png" alt="Menu"></a>
 					<?php display_multisite_global_menu(); ?>
 				</div>
-			<?php // wp_nav_menu($mainMenu);
-			?>
 
 			<div class="clear"></div>
 

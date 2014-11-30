@@ -6,31 +6,27 @@ function display_multisite_global_menu() {
 	if (is_multisite() && !is_main_site()) {
 		switch_to_blog(1); //should send us to the main site temporarily
 	}
-	wp_nav_menu("global_menu"); //get the nav menu from the main site context
+	wp_nav_menu( array (
+		"theme_location" => "global_menu"
+		//these werent used, divs were created in the header and footer
+		//"container" => "nav",
+		//"container_class" => "",
+		//"container_id" => "global_menu"
+	) );
+	//get the nav menu from the main site context
 	if (is_multisite() && ms_is_switched()) {
 		restore_current_blog(); //revert to the network site if we switched it above
 	}
 }
 
-register_nav_menu("footer_menu", "Footer Menu");
-
-$footerMenu = array (
-	"theme_location" => "footer_menu",
-	"container" => "nav",
-	"container_class" => "",
-	"container_id" => "footer_menu"
-);
-
-
-register_nav_menu("global_menu", "Global Menu");
-
-$globalMenu =  array (
-	"theme_location" => "global_menu",
-	"container" => "nav",
-	"container_class" => "",
-	"container_id" => "global_menu"
-);
-
+function register_dashboard_menus() {
+	register_nav_menus(
+		array (
+			'global_menu' => 'Global Menu'
+		)
+	);
+}
+add_action( 'init', 'register_dashboard_menus' );
 
 
 add_action( 'widgets_init', 'my_register_sidebars' );
@@ -80,19 +76,19 @@ function get_my_title_tag() {
     
     global $post;
     
-    if ( is_home() || is_archive() || is_front_page()) {  // for the Blog (Home) Page, Blog (Archives) Pages or the site’s Front Page
+    if ( is_home() || is_archive() || is_front_page()) {  // for the Blog (Home) Page, Blog (Archives) Pages or the siteï¿½s Front Page
     
         bloginfo('description'); // retrieve the site tagline
     
     } 
     
-    elseif ( is_page() || is_single() ) { // for your site’s Pages or Postings
+    elseif ( is_page() || is_single() ) { // for your siteï¿½s Pages or Postings
     
         the_title(); // retrieve the page or posting title 
     
     } 
     
-    if ( $post->post_parent ) { // for your site’s Parent Pages
+    if ( $post->post_parent ) { // for your siteï¿½s Parent Pages
     
         echo ' | '; // separator with spaces
         echo get_the_title($post->post_parent);  // retrieve the parent page title
