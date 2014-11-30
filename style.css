@@ -246,11 +246,11 @@ header {
 	padding:10px 0px;
 }
 
-.article post h2 {
+.article .article-post h2 {
 	font-size:1.5em; /* 24/16 = 1.5 */
 }
 
-.article-post post-metadata {
+.article-post .post-metadata {
 	font-size:1.5em; /* 24/16 = 1.5 */
 }
 
@@ -366,12 +366,12 @@ footer {
    
    /* Main Content */
    
-   main-content-left, .content-area {
+   .main-content-left, .content-area {
 	margin-left: 0;
 	float: none;
 	width: auto;
    }
-   main-content-left h1, .content-area h1 {
+   .main-content-left h1, .content-area h1 {
 	font-size: 20px;
    }   
    
