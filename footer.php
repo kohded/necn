@@ -7,7 +7,7 @@
 			<?php display_multisite_global_menu(); ?>
 		</div>
 
-        <?php get_sidebar("footer"); ?>
+        <?php //get_sidebar("footer"); ?>
 	<p><small>Copyright &#169; 2014, Neighborhood Emergency Communications Network | All Rights Reserved</small></p>
 	</div>
 	<!--end footer class content div-->
