@@ -42,7 +42,7 @@
 				<ul>
 					<li><a href="<?php bloginfo('home'); ?>/wp-login.php">Login</a></li>
 					<li><?php get_search_form(); ?></li>
-					<li> <?php if ( function_exists('cn_social_icon') ) echo cn_social_icon(); ?></li>
+					<li><?php do_action('crafty-social-link-buttons') ; ?></li>
 				</ul>
 			</div>
 			
@@ -54,11 +54,10 @@
 					<?php display_multisite_global_menu(); ?>
 				</div>
 				<div class="primary-mobile-nav">
-					<a href="#menu" class="show-menu"><img src="../images/nav.png" alt="Menu"></a>
+					<a href="#menu" class="show-menu"><img src="<?php bloginfo('template_url'); ?>/images/nav.png" alt="Menu"></a>
+					<?php //if ( function_exists('cn_menu_icon') ) echo cn_menu_icon(); ?>
 					<?php display_multisite_global_menu(); ?>
 				</div>
-			<?php // wp_nav_menu($mainMenu);
-			?>
 
 			<div class="clear"></div>
 
