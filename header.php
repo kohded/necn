@@ -42,7 +42,7 @@
 				<ul>
 					<li><a href="<?php bloginfo('home'); ?>/wp-login.php">Login</a></li>
 					<li><?php get_search_form(); ?></li>
-					<li> <?php if ( function_exists('cn_social_icon') ) echo cn_social_icon(); ?></li>
+					<li> <?php do_action('crafty-social-link-buttons'); ?></li>
 				</ul>
 			</div>
 			

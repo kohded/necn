@@ -36,7 +36,7 @@ Template Name: Page-Neighborhood
  
     <div class="main-content-social-media">
         <h3>Stay Connected</h3>
-        <?php if ( function_exists('cn_social_icon') ) echo cn_social_icon(); ?>
+	    <?php do_action('crafty-social-link-buttons'); ?>
     </div>
     <!--closing div for main-content-social-media-->	
 </main>
