@@ -278,7 +278,7 @@ header {
 	margin-bottom:20px;
 }
 
-.textwidget, #sub-navigation-items, .widget_recent_entries ul {
+.textwidget, #sub-navigation-items, .widget ul {
 	padding: 2%;
 }
 
