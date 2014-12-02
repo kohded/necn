@@ -6,31 +6,27 @@ function display_multisite_global_menu() {
 	if (is_multisite() && !is_main_site()) {
 		switch_to_blog(1); //should send us to the main site temporarily
 	}
-	wp_nav_menu("global_menu"); //get the nav menu from the main site context
+	wp_nav_menu( array (
+		"theme_location" => "global_menu"
+		//these werent used, divs were created in the header and footer
+		//"container" => "nav",
+		//"container_class" => "",
+		//"container_id" => "global_menu"
+	) );
+	//get the nav menu from the main site context
 	if (is_multisite() && ms_is_switched()) {
 		restore_current_blog(); //revert to the network site if we switched it above
 	}
 }
 
-register_nav_menu("footer_menu", "Footer Menu");
-
-$footerMenu = array (
-	"theme_location" => "footer_menu",
-	"container" => "nav",
-	"container_class" => "",
-	"container_id" => "footer_menu"
-);
-
-
-register_nav_menu("global_menu", "Global Menu");
-
-$globalMenu =  array (
-	"theme_location" => "global_menu",
-	"container" => "nav",
-	"container_class" => "",
-	"container_id" => "global_menu"
-);
-
+function register_dashboard_menus() {
+	register_nav_menus(
+		array (
+			'global_menu' => 'Global Menu'
+		)
+	);
+}
+add_action( 'init', 'register_dashboard_menus' );
 
 
 add_action( 'widgets_init', 'my_register_sidebars' );
@@ -53,7 +49,7 @@ function my_register_sidebars() {
 	) );
 
 
-	}
+}
     
 //    Numbered pagination for posts
     if ( ! function_exists( 'numbered_pagination' ) ) :
@@ -80,19 +76,19 @@ function get_my_title_tag() {
     
     global $post;
     
-    if ( is_home() || is_archive() || is_front_page()) {  // for the Blog (Home) Page, Blog (Archives) Pages or the site’s Front Page
+    if ( is_home() || is_archive() || is_front_page()) {  // for the Blog (Home) Page, Blog (Archives) Pages or the siteï¿½s Front Page
     
         bloginfo('description'); // retrieve the site tagline
     
     } 
     
-    elseif ( is_page() || is_single() ) { // for your site’s Pages or Postings
+    elseif ( is_page() || is_single() ) { // for your siteï¿½s Pages or Postings
     
         the_title(); // retrieve the page or posting title 
     
     } 
     
-    if ( $post->post_parent ) { // for your site’s Parent Pages
+    if ( $post->post_parent ) { // for your siteï¿½s Parent Pages
     
         echo ' | '; // separator with spaces
         echo get_the_title($post->post_parent);  // retrieve the parent page title
@@ -104,5 +100,64 @@ function get_my_title_tag() {
     echo ' | '; // separator with spaces
     echo 'Seattle, WA'; // write in the location
     
-}    
-    
+}
+
+
+/**
+ * MetaSlider plugin shortcode slug
+ * Filter the shortcode attributes.
+ * If the ID parameter is not an integer, assume it is a slug.
+ * Convert the slug to an ID and return the attributes.
+ */
+function metaslider_shortcode_slug( $atts ) {
+
+	if ( isset( $atts['id'] ) && ! is_int( $atts['id'] ) ) {
+
+		$slider = get_page_by_path( $atts['id'], OBJECT, 'ml-slider' );
+
+		if ( $slider ) {
+			$atts['id'] = $slider->ID;
+		}
+
+	}
+
+	return $atts;
+
+}
+add_filter('shortcode_atts_metaslider', 'metaslider_shortcode_slug', 10, 3);
+
+/**
+ * Ensure the post_name (slug) is updated when a slideshow title
+ * is updated.
+ */
+function metaslider_update_slug_on_save( $data , $postarr ) {
+
+	if ( isset( $postarr['post_type'] ) && $postarr['post_type'] == 'ml-slider' ) {
+
+		$data[ 'post_name' ] = sanitize_title( $postarr[ 'post_title' ] );
+
+	}
+
+	return $data;
+	var_dump($data);
+}
+add_filter( 'wp_insert_post_data' , 'metaslider_update_slug_on_save' , 10, 2 );
+
+// Displays the slider based on the page and slug
+function display_metaslider_by_slug() {
+	if ( is_front_page() ) {
+		echo do_shortcode("[metaslider id=front-page]");
+	}
+	elseif ( is_page() ) {
+		echo do_shortcode("[metaslider id=page]");
+	}
+	elseif ( is_page( 'neighborhood' ) ) {
+		echo do_shortcode("[metaslider id=page-neighborhood]");
+	}
+	elseif ( is_page_template('neighborhood.php') ) {
+		echo do_shortcode("[metaslider id=neighborhood]");
+	}
+	else {
+		echo do_shortcode("[metaslider id=default]");
+	}
+}

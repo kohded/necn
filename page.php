@@ -14,9 +14,7 @@
 
     <!-- slider -->
     <?php
-
-        echo do_shortcode("[metaslider id=334]");
-
+        display_metaslider_by_slug(); //functions.php
     ?>
 
     <!-- start loop -->
@@ -31,8 +29,8 @@
  
     <div class="main-content-social-media">
         <h3>Stay Connected</h3>
-        <?php if ( function_exists('cn_social_icon') ) echo cn_social_icon(); ?>
-    </div><!--closing div for main-content-social-media-->	
+	    <?php do_action('crafty-social-link-buttons'); ?>
+    </div><!--closing div for main-content-social-media-->
 </main>
 
 <?php get_sidebar(); ?>

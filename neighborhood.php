@@ -13,13 +13,9 @@ Template Name: Neighborhood
     <!-- end breadcrumbs -->
     
     <!-- slider -->
-    <div id="slider-home">
     <?php
-
-        echo do_shortcode("[metaslider id=334]");
-
+        display_metaslider_by_slug(); //functions.php
     ?>
-    </div>
     <!-- end front-page slider -->
     
 <!-- start loop -->
@@ -40,7 +36,7 @@ Template Name: Neighborhood
  
     <div class="main-content-social-media">
         <h3>Stay Connected</h3>
-        <?php if ( function_exists('cn_social_icon') ) echo cn_social_icon(); ?>
+	    <?php do_action('crafty-social-link-buttons'); ?>
     </div>
     <!--closing div for main-content-social-media-->	
 </main>

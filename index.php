@@ -21,11 +21,11 @@
                 </h2>
                 <!-- start post metadata -->
                 <ul class="post-metadata">
-               		<small>
-                    <li><span class="author">Posted by <?php the_author_posts_link(); ?> </span></li>
-                    <li><span class="cat">about <?php the_category(', ') ?>  </span></li>
-                    <li><span class="date">on <?php the_time('l, F jS, Y') ?>  </span></li>
-                    </small>
+
+                    <li><small><span class="author">Posted by <?php the_author_posts_link(); ?> </span></small></li>
+                    <li><small><span class="cat">about <?php the_category(', ') ?>  </span></small></li>
+                    <li><small><span class="date">on <?php the_time('l, F jS, Y') ?>  </span></small></li>
+
                 </ul>
                 <?php // the_content('More &raquo;'); ?>
                 <?php the_excerpt(); ?><a href="<?php the_permalink() ?>">Read More &raquo;</a>
