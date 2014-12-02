@@ -16,7 +16,6 @@
     <?php
         display_metaslider_by_slug(); //functions.php
     ?>
-
     <!-- start loop -->
     <?php if (have_posts()) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
