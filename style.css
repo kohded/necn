@@ -298,18 +298,17 @@ display:none;
    
    /* SLIDER */
     #slider-home {
-	display: none;
-	max-width: 300px;
+	display: none; /*Deleted max-width:300px;*/
     }
    
    /* MAIN CONTENT */  
-   main-content-left, .content-area {
-	margin-left: 0;
-	float: none;
-	width: auto;
+   .main-content-left, .content-area {
+	/*Deleted margin-left :0; */
+	/*Deleted float: none; */
+	width: 100%; /*Changed from width: auto; */
    }
    
-   main-content-left h1, .content-area h1 {
+   .main-content-left h1, .content-area h1 {
 	font-size: 20px;
    }   
    
