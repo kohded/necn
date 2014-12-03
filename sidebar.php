@@ -25,7 +25,7 @@ $parentname = get_the_title($post->ID);
 	if ($children) { // if has children ?>
 	
 		<div id="sub-navigation" class="widget-area">
-	<h2 id="sub-navigation-title"><?php echo $parentname; ?> </h2>
+		<h3 id="sub-navigation-title"><?php echo $parentname; ?> </h3>
 			<ul id="sub-navigation-items">
 				<?php echo $children; ?>
 			</ul>

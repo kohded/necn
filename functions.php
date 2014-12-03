@@ -139,23 +139,17 @@ function metaslider_update_slug_on_save( $data , $postarr ) {
 	}
 
 	return $data;
-	var_dump($data);
 }
 add_filter( 'wp_insert_post_data' , 'metaslider_update_slug_on_save' , 10, 2 );
 
 // Displays the slider based on the page and slug
+// In the slider dashboard, slider should be named Front Page, Page, Default.
 function display_metaslider_by_slug() {
 	if ( is_front_page() ) {
 		echo do_shortcode("[metaslider id=front-page]");
 	}
 	elseif ( is_page() ) {
 		echo do_shortcode("[metaslider id=page]");
-	}
-	elseif ( is_page( 'neighborhood' ) ) {
-		echo do_shortcode("[metaslider id=page-neighborhood]");
-	}
-	elseif ( is_page_template('neighborhood.php') ) {
-		echo do_shortcode("[metaslider id=neighborhood]");
 	}
 	else {
 		echo do_shortcode("[metaslider id=default]");
