@@ -145,7 +145,7 @@ content: " ";
 font-size:20px;
 }
 .primary-nav li.menu-item-has-children > a:after {
-content: "?";
+content: "ˇ"; /* ˇ */
 position: relative;
 top: 8px;
 left: 6px;
@@ -205,10 +205,16 @@ z-index:10;
 padding:10px 0px;
 }
 .article .article-post h2 {
-font-size:1.5em; /* 24/16 = 1.5 */
+/*font-size:1.5em; /* 24/16 = 1.5 */
 }
 .article-post .post-metadata {
-font-size:1.5em; /* 24/16 = 1.5 */
+/*font-size:1.5em; /* 24/16 = 1.5 */
+}
+.article-post p{
+display:inline;
+}
+.article-post .more {
+font-style:italic;
 }
 /*SIDEBAR*/
 .widget-title, #sub-navigation-title {

@@ -28,7 +28,7 @@
 
                 </ul>
                 <?php // the_content('More &raquo;'); ?>
-                <?php the_excerpt(); ?><a href="<?php the_permalink() ?>">Read More &raquo;</a>
+                <?php the_excerpt(); ?><a class="more" href="<?php the_permalink() ?>">Read More &raquo;</a>
                 <?php // edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
             </article>
         <?php endwhile; ?>
