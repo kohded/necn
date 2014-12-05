@@ -246,13 +246,17 @@ div.crafty-social-buttons ul.crafty-social-buttons-list {
 
 .primary-nav ul ul li {
     position: relative;
-    font-size: .75em;
+    font-size: .85em;
+	line-height:.9;
     display: block;
     background-color:#3399D1;
     width:100%;
     text-align:left;
-    padding: 0 10%;
+    padding: 0 15%;
     left:5px;
+}
+.primary-nav ul ul li:last-child{
+	padding-bottom:5%;	
 }
 .primary-nav ul li:hover > ul {
     display: block;
