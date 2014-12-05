@@ -80,6 +80,7 @@ header {
 /* Main Content */
 .main-content-left, .content-area {
     max-width: 615px;
+    margin-top: 20px;
     padding-left:5px;
     float: left;
 }
@@ -104,6 +105,7 @@ header {
 /* Sidebar */
 .main-content-right {
     max-width: 295px;
+    margin-top: 20px;
     padding-right:5px;
     float: right;
 }
