@@ -44,7 +44,7 @@
 
     <!-- start right page sidebar -->
     <?php get_sidebar(); ?>
-    <!-- end right page sidebar ->
+    <!-- end right page sidebar -->
 
 
 <?php get_footer(); ?>
