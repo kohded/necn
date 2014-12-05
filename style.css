@@ -291,7 +291,7 @@ div.crafty-social-buttons ul.crafty-social-buttons-list {
     margin-bottom:20px;
 }
 
-.textwidget, #sub-navigation-items, .widget_recent_entries ul, .widget_search {
+.textwidget, #sub-navigation-items, .widget ul, .widget_search {
 	padding: 2%;
 }
 
