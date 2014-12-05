@@ -160,19 +160,19 @@ header {
     text-align: left;
 }
 
-.crafty-social-caption {
+div.crafty-social-buttons-caption-block .crafty-social-caption {
 	color: #fff;
 	background-color: #3399D1;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
 
-.crafty-social-buttons-list {
+div.crafty-social-buttons ul.crafty-social-buttons-list {
 	padding-top:2%;
-	color: black;
+	/*color: black;
 	font-size: 1em;
 	display: inline;
-	text-align: left;
+	text-align: left;*/
 }
 
 /* Primary Navigation */
