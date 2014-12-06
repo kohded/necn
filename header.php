@@ -36,7 +36,7 @@
 	<!-- start class content div-->
 	<div class="content">
 
-		<a href="<?php echo get_home_url('1','/'); ?>"><img src="http://placehold.it/350x150" alt="NECN Blog for Neighborhood Emergency Preparedness in Seattle, WA"></a>
+		<a href="<?php echo get_home_url('1','/'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/necn-logo.png" alt="NECN Blog for Neighborhood Emergency Preparedness in Seattle, WA"></a>
 		<div class="right-column-header">
 			<div class="right-column-top-header">
 				<ul>
