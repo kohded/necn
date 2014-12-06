@@ -53,6 +53,11 @@ header {
     background:url(../necn/images/header.png) no-repeat scroll center top;
 }
 
+.clear {
+	clear:both;
+}
+
+
 /* Toggle Menu for Mobile*/   
     #toggle{
 	display: none;
@@ -130,7 +135,7 @@ header {
 
 /* Logo */
 .logo {
-	width: 350px;
+	max-width: 75%;
 	float: left;
 }
 
@@ -152,6 +157,7 @@ header {
 
 /* Main Navigation */
 .right-column-header {
+	max-width: 25%;
     float: right;
 }
 
@@ -180,6 +186,7 @@ div.crafty-social-buttons ul.crafty-social-buttons-list {
 	display: inline;
 	text-align: left;*/
 }
+
 
 /* Primary Navigation */
 .primary-nav li {
@@ -345,21 +352,34 @@ footer {
 
 /* -----------Small Tablet View----------- */
 @media only screen and (min-width:481px ) and (max-width:920px) {
-    .footer-nav{
+	
+body {
+	font-size: 66%;
+}
+	
+iframe {
+	width: 100%;
+}
+	
+.footer-nav{
         display: none;
     }
-    .content {
+ 
+.content {
         box-sizing: border-box;
         width: 93%;
     }
-    .main-content-left, .content-area {
+
+.main-content-left, .content-area {
         max-width: 63%;
     }
-    .main-content-right {
+
+.main-content-right {
         max-width: 30%;
         float:right;
     }
-    .main-content-social-media {
+   
+.main-content-social-media {
         display:none;
     }
 }
