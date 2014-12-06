@@ -4,7 +4,7 @@
 */
 ?>
 <?php get_header(); ?>
-		
+
     <!-- start front-page slider -->
 	<?php
 		display_metaslider_by_slug(); //functions.php

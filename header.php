@@ -22,8 +22,15 @@
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<<<<<<< HEAD
 		ga('create', 'UA-36348141-1', 'auto');
 		ga('send', 'pageview');
+=======
+
+		ga('create', 'UA-36348141-1', 'auto');
+		ga('send', 'pageview');
+
+>>>>>>> FETCH_HEAD
 	</script>
 	<!-- end Google AC -->
 	<?php wp_head(); ?>
@@ -34,9 +41,13 @@
 	<!-- start class content div-->
 	<div class="content">
 
+<<<<<<< HEAD
 		<div class="logo">
 		<a href="<?php echo get_home_url('1','/'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/necn-logo.png" alt="NECN Blog for Neighborhood Emergency Preparedness in Seattle, WA"></a>
 		</div>
+=======
+		<a href="<?php echo get_home_url('1','/'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/necn-logo.png" alt="NECN Blog for Neighborhood Emergency Preparedness in Seattle, WA"></a>
+>>>>>>> FETCH_HEAD
 		<div class="right-column-header">
 			<div class="right-column-top-header">
 				<ul>
@@ -59,7 +70,11 @@
 			<?php display_multisite_global_menu(); ?>
 		</div>
 
+<<<<<<< HEAD
 	
+=======
+		<div class="clear"></div>
+>>>>>>> FETCH_HEAD
 
 	</div>
 	<!-- end class content div-->
@@ -67,4 +82,8 @@
 
 
 <!-- start content -->
+<<<<<<< HEAD
 <div class="content">
+=======
+<div class="content">
+>>>>>>> FETCH_HEAD
