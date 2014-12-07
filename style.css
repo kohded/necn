@@ -525,8 +525,8 @@ header {
 
     /*MENU AUTO CLOSES ON REFRESH*/
 .menu ul{
-	display:none;
-	position:absolute;
+	/* display:none;  display the submenu */
+	/* position:absolute; figure out the action, design and positioning */
 	top:25px;
 	right:20px;
     } 
