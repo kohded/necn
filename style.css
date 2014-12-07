@@ -398,7 +398,7 @@ header {
    
    /* Toggle Menu */   
 #toggle{
-	display: block;/* Make Toggle Menu visbale*/   
+	display: block;/* Make Toggle Menu visable*/   
 	float: right;/* float Toggle to the right */
 	padding-top: 5px;
     }
@@ -468,16 +468,6 @@ header {
 	display: block;
 	position: relative;
    }
-
-   /*strip the ul of list styling*/
-.primary-mobile-nav ul.menu {
-	display: none;
-	list-style-type: none; 
-	position: absolute;
-	background: #3399D1;
-	width: 100%;
-	z-index: 999999;
-   }
    
    /*STRIP THE UL OF LIST STYLING*/
 .primary-mobile-nav .menu-main-nav-container .menu .sub-menu ul{  /*add div and ul classes*/
@@ -496,13 +486,12 @@ header {
         
    /*add menu image*/
 .primary-mobile-nav{
-	background-image: url("./images/img-toggle.png");    
+	background-image: url("../images/img-toggle.png");    
 	display: block;
 	position: relative;
 }
 
    /*RESPONSIVE NAV*/
-
 .primary-mobile-nav{
 	width:100%;
 	position:relative;
@@ -510,18 +499,6 @@ header {
 	font-weight:500;
 	z-index:1;
     }
-
-/*MENU AUTO CLOSES ON REFRESH*/
-   /* ul.menu{
-    display:none;
-    position:absolute;
-    top:25px;
-    right:20px;
-   }*/
-    
-  /*  ul.menu li.last, ul.menu li.last a{
-    border-radius:0 0 5px 5px;
-  }*/
 
     /*MENU AUTO CLOSES ON REFRESH*/
 .menu ul{
