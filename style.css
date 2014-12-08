@@ -474,7 +474,7 @@ div.crafty-social-buttons .crafty-social-caption {
 	display:none;
 	position:relative; /*absolute*/
 	/* top:105px; */
-	/* right:12px; */
+	right:18px;
     }
 
 .menu li.last, .menu li.last a{
@@ -534,7 +534,7 @@ div.crafty-social-buttons .crafty-social-caption {
 .nav-mobile{
 		width:50px;
 		height:49px;
-		top:-57px;
+		top:-48px;
 		/* right:12px; */
 		border-radius:5px 5px 0 0;
 		position:absolute; 
