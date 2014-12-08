@@ -25,11 +25,6 @@
 		
 		ga('create', 'UA-36348141-1', 'auto');
 		ga('send', 'pageview');
-
-
-		ga('create', 'UA-36348141-1', 'auto');
-		ga('send', 'pageview');
-
 	</script>
 	<!-- end Google AC -->
 	<?php wp_head(); ?>
@@ -62,7 +57,6 @@
 		</div>
 		<div class="primary-mobile-nav">
 			<a href="#menu" class="show-menu"><img src="<?php bloginfo('template_url'); ?>/images/nav.png" alt="Menu"></a>
-
 			<?php display_multisite_global_menu(); ?>
 		</div>
 
@@ -74,10 +68,6 @@
 	<!-- end class content div-->
 </header>
 
-
 <!-- start content -->
-
-<div class="content">
-
 <div class="content">
 
