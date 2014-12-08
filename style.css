@@ -437,7 +437,7 @@ header {
    
 .main-content-left p, .content-area .main-content-right ol, ul {
 	font-size: 1em; /* 16px */
-	line-height: 150%; /* 24px */
+	line-height: 110%; /* 20px */
    }   
    
    /*POST METADATA*/
@@ -576,13 +576,13 @@ header {
 	border-radius:5px 5px 0 0;
 	position:absolute;
 	display:block;
-	background:#3399d1 url(../images/nav.png) no-repeat center center;
+	background:#3399d1; /* url(../images/nav.png) no-repeat center center; */
 	background-size: 20px;
     }
     
 .primary-mobile-nav .nav-click{
-	width:50px;
-	height:49px;
+/*	width:50px;
+	height:49px;*/
 	top:0;
 	right:0;
 	position:absolute;
