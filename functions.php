@@ -7,11 +7,8 @@ function display_multisite_global_menu() {
 		switch_to_blog(1); //should send us to the main site temporarily
 	}
 	wp_nav_menu( array (
-		"theme_location" => "global_menu"
-		//these werent used, divs were created in the header and footer
-		//"container" => "nav",
-		//"container_class" => "",
-		//"container_id" => "global_menu"
+		"theme_location" => "global_menu",
+		"container" => ""
 	) );
 	//get the nav menu from the main site context
 	if (is_multisite() && ms_is_switched()) {

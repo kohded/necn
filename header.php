@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<script src="//use.typekit.net/scx6gfo.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
-
+		<!-- Start Meta -->
+	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
 	<!-- snippet for wp responsive design -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<script src="//use.typekit.net/scx6gfo.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<!--RESPONSIVE NAV-->
+	<script src="<?php bloginfo('template_directory'); ?>/js/jquery-2.0.3.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
 
 	<!-- SEO get_my_title_tag -->
 	<title><?php get_my_title_tag(); ?></title>
 
-	<!-- Start Meta -->
-	<meta charset="<?php bloginfo('charset'); ?>">
-	<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
-
 	<!-- Start Stylesheet -->
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
+
 	<!-- start Google AC -->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -56,10 +59,9 @@
 			<?php display_multisite_global_menu(); ?>
 		</div>
 		<div class="primary-mobile-nav">
-			<a href="#menu" class="show-menu"><img src="<?php bloginfo('template_url'); ?>/images/nav.png" alt="Menu"></a>
+
 			<?php display_multisite_global_menu(); ?>
 		</div>
-
 
 		<div class="clear"></div>
 
