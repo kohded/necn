@@ -552,7 +552,7 @@ div.crafty-social-buttons .crafty-social-caption {
 	
 .nav-click{
 	width:50px;
-	height:48px;
+	height:35px;
 	top:0;
 	right:0;
 	position:absolute;
@@ -563,7 +563,7 @@ div.crafty-social-buttons .crafty-social-caption {
 	
 .nav-click i{
 	width:50px;
-	height:48px;
+	height:100%px;
 	display:block;
 	background:url(images/drop.svg) no-repeat center center;
 	background-size:20px;
